@@ -1,0 +1,19 @@
+# Publish with Settings → Pages → Deploy from a branch → main → /docs.
+# The user site markheydon.github.io already uses markheydon.me.uk, so this
+# project is served at https://markheydon.me.uk/reminders-gtd/
+# Do not set a custom domain on this repository. That would replace the profile site.
+
+title: Reminders GTD
+description: An opinionated Getting Things Done setup for the iPhone Reminders app on iOS 27.
+author: Mark Heydon
+url: https://markheydon.me.uk
+baseurl: /reminders-gtd
+
+theme: minima
+markdown: kramdown
+kramdown:
+  input: GFM
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
