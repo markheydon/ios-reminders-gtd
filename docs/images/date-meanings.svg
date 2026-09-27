@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="360" viewBox="0 0 880 360" role="img" aria-labelledby="title desc">
+  <title id="title">What a date means</title>
+  <desc id="desc">No date means do it in that context. A date means due or show in Today, and the action still appears in its context list. Steps that cannot start yet stay in the project notes.</desc>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #1c1917; }
+    .h { font-size: 16px; font-weight: 700; }
+    .b { font-size: 14px; fill: #44403c; }
+  </style>
+  <rect width="880" height="360" fill="#fafaf9"/>
+
+  <rect x="28" y="36" width="260" height="200" rx="14" fill="#dbeafe" stroke="#1d4ed8"/>
+  <text class="h" x="48" y="72">No date</text>
+  <text class="b" x="48" y="108">Do it when you are</text>
+  <text class="b" x="48" y="130">in that context.</text>
+  <text class="b" x="48" y="168">It shows on Anywhere,</text>
+  <text class="b" x="48" y="190">Home, Out, or Calls.</text>
+
+  <rect x="310" y="36" width="260" height="200" rx="14" fill="#ffedd5" stroke="#c2410c"/>
+  <text class="h" x="330" y="72">A date</text>
+  <text class="b" x="330" y="108">Due, or show it in</text>
+  <text class="b" x="330" y="130">Today on that day.</text>
+  <text class="b" x="330" y="168">It also stays on its</text>
+  <text class="b" x="330" y="190">context smart list.</text>
+
+  <rect x="592" y="36" width="260" height="200" rx="14" fill="#eef2ff" stroke="#4338ca"/>
+  <text class="h" x="612" y="72">Not yet</text>
+  <text class="b" x="612" y="108">A line in the project</text>
+  <text class="b" x="612" y="130">notes, not a subtask.</text>
+  <text class="b" x="612" y="168">Promote it when it</text>
+  <text class="b" x="612" y="190">becomes doable.</text>
+
+  <text class="b" x="28" y="280">Reminders stores one date. A hidden start date and a separate deadline cannot both be fields.</text>
+  <text class="b" x="28" y="304">If both matter, the date is the deadline and the notes say when to start.</text>
+</svg>

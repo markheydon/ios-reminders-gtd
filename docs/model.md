@@ -94,6 +94,8 @@ The subtask stays under the project. When the thing arrives, put a real context 
 
 ## Dates, flags, and priority
 
+![What a date means](images/date-meanings.svg)
+
 Reminders has one date field. This system uses it like this:
 
 - **No date** means “do it when I am in that context”.
