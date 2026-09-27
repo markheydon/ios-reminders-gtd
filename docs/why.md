@@ -2,7 +2,7 @@
 
 Getting Things Done is a way to get commitments out of your head and into a system you trust enough to stop rehearsing them. David Allen’s phrase for that trust is “mind like water”: the right reaction at the right moment, and a quiet head the rest of the time.
 
-Reminders can be that system on an iPhone, because capture is already in your pocket. Siri, the share sheet, a lock screen widget, and the Action button can all land a thought in Inbox before you have decided what it means. The rest of this guide is how to decide, and how to see the right handful of actions when you are at home, out, or about to phone someone.
+This guide is written for Reminders on iOS 27. Reminders can be that system on an iPhone, because capture is already in your pocket. Siri, the share sheet, a lock screen widget, and the Action button can all land a thought in Inbox before you have decided what it means. The rest of this guide is how to decide, and how to see the right handful of actions when you are at home, out, or about to phone someone.
 
 ## What usually breaks
 

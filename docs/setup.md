@@ -1,6 +1,6 @@
 # Set it up on your iPhone
 
-Budget about an hour. You need iOS 18 or later. Smart lists in iOS 17 show a parent reminder with a link through to its subtasks; from iOS 18 the subtasks themselves can appear in the smart list, which is the view this system is built for.
+Budget about an hour. These steps are written for **Reminders on iOS 27**. Smart lists have been able to show a project’s subtasks since iOS 18, which is the view this system is built for. iOS 27 adds a metadata box on the reminder you are editing, and Apple Intelligence can fill in a date, time, or place from a sentence you type. That fill-in needs an iPhone 15 Pro or later. Everything else in this setup is ordinary Reminders.
 
 ## 1. Turn on iCloud Reminders
 
@@ -38,13 +38,15 @@ Order inside the group, top to bottom: Inbox, Projects, Next, Someday, Weekly Re
 
 These sections are areas of responsibility. They stay on this list only.
 
+Leave **Auto-Categorize** off for Projects, Next, Inbox, Someday, and Weekly Review. On iOS 27 that control can sort a list into sections for you. On Projects, your sections are areas you chose. Automatic sections would file projects into groups you did not name. Grocery lists are the place to let Apple sort.
+
 ## 4. Create the tags once
 
 Smart list filters offer tags you have already used. Make them exist:
 
 1. Open **Next**.
 2. Tap **New Reminder** and title it `Tag setup`.
-3. Tap the tag button, or type a space and `#`, and add: `anywhere` `home` `out` `call` `waiting`.
+3. In the box around that reminder, tap **Tag**. On iOS 27 the quick controls (Date, Time, Urgent, Repeat, Location, Tag, Flag, and Camera) sit on the reminder itself. You can also type a space and `#`. Add: `anywhere` `home` `out` `call` `waiting`.
 4. Tap Done.
 
 Leave this reminder in place until the smart lists exist. You will delete it at the end.
@@ -111,7 +113,7 @@ Do whichever of these you will actually use:
 - Add the Reminders **widget** to the Home Screen or Lock Screen, pointed at Inbox if the widget lets you choose a list.
 - Tell Siri “Remind me to …” during setup once, and check the reminder landed in a list you can see. If Siri files new reminders into a default list other than Inbox, change the default: open Reminders, tap the more button on the lists screen, look for the default list setting, and choose Inbox. The exact label varies slightly by iOS version; it is the list Siri uses when you do not name one.
 - In an app you read often, such as Mail or Safari, try the share button and then Reminders, and send one item to Inbox.
-- On iOS 26, you can add Reminders to Control Centre, or assign it to the Action button, if you want capture without unlocking a home screen icon.
+- Add Reminders to Control Centre, or assign it to the Action button, if you want capture without hunting for the app icon. iOS 27 also has an extra-large Reminders widget if you want Inbox to fill a Home Screen page.
 
 ## 9. Delete the sample and do a first dump
 
