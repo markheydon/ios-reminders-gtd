@@ -25,7 +25,7 @@ When a single project is the whole of your week, a temporary tag such as `tax` o
 
 The `out` tag is the list you read before you leave. A location on a single reminder is the notification when you are already nearby: arriving at the post office, leaving the office so you remember the dry cleaning on the way home.
 
-Set it on the subtask: edit details, Location, choose arriving or leaving, and set the distance. Your home and work addresses on your contact card make Siri’s “when I get home” phrases work.
+Set it on the subtask. On iOS 27, tap **Location** in the box around the reminder, choose arriving or leaving, and set the distance. When Messaging, notes, and priority are still behind the info button. Your home and work addresses on your contact card make Siri’s “when I get home” phrases work.
 
 One location per action is enough. A tag named after each shop is the taxonomy this guide is trying to spare you.
 
@@ -49,4 +49,4 @@ View as Columns on the Projects list is useful in the weekly review when you wan
 
 ## Shortcuts
 
-The Shortcuts app can open a smart list or file a reminder. This guide does not depend on a shortcut. If you later automate capture, keep the destination as Inbox so a shortcut does not skip clarify.
+The Shortcuts app can open a smart list or file a reminder. iOS 27 adds actions to create and delete groups, lists, and sections. This guide does not depend on a shortcut. If you later automate capture, keep the destination as Inbox so a shortcut does not skip clarify.

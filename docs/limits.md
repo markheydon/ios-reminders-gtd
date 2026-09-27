@@ -22,7 +22,7 @@ Ticking the parent ticks everything under it. The parent is the outcome, and you
 
 From iOS 18, custom smart lists can show subtasks rather than only a “has subtasks” link. In practice you will see the project title and the actions under it. Tick the action that carries the tag for the list you opened. If a sibling action from another context is visible because Apple groups the whole project, leave it for its own list.
 
-On iOS 17, smart lists are a weaker view of subtasks. Update the phone before you rely on this guide.
+This guide is written for iOS 27. On iOS 17, smart lists are a weaker view of subtasks. Update the phone before you rely on these lists.
 
 A tag filter includes reminders that have the tag. It cannot also say “and not this other tag” in a second tag filter. That is why a waiting action **replaces** its context tag with `waiting`, and why Someday is a separate list that the smart lists do not read. One tag on a live action is also simpler to keep up.
 
@@ -39,6 +39,14 @@ From iOS 18, scheduled reminders can appear in the Calendar app beside events. U
 ## Reference is not a reminder
 
 Reminders is a poor filing cabinet. Notes, Files, and the apps that already hold the document are the reference system. A reminder may contain a URL or a scan of a letter you need in order to do the action. The letter is still not a project.
+
+## A sentence can smuggle in a date
+
+iOS 27 can turn “tomorrow at 4” in the title into a real due date as you type, on an iPhone 15 Pro or later. Glance at the metadata box before you tap Done. A date you did not choose is still a date, and it will show up in Today.
+
+## Auto-Categorize will rename your areas
+
+Projects uses sections as areas of responsibility. Auto-Categorize builds its own sections. Leave it off on the GTD lists. The grocery list is where the iOS 27 sorting improvements belong.
 
 ## Tags will not rescue a skipped review
 
