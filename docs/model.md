@@ -72,7 +72,7 @@ Each context list includes reminders that match **all** of:
 | Calls | `call` |
 | Waiting | `waiting` |
 
-From iOS 18 onwards, a smart list can show the project with its subtasks underneath. You see “Tax return filed” and, under it, the action you tagged. Tick the action. Leave the project ticked only when the outcome is done.
+On iOS 27, as since iOS 18, a smart list can show the project with its subtasks underneath. You see “Tax return filed” and, under it, the action you tagged. Tick the action. Leave the project ticked only when the outcome is done.
 
 Inbox, Someday, and Weekly Review are excluded because the list filter names Projects and Next only. That is deliberate. A someday idea must not appear on Home just because you were standing in the kitchen when you thought of it.
 
