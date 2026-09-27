@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="640" viewBox="0 0 880 640" role="img" aria-labelledby="title desc">
+  <title id="title">Clarify one inbox item</title>
+  <desc id="desc">Decide whether an inbox item is trash or reference, someday, a two-minute action, a project with tagged subtasks, or a single next action.</desc>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #1c1917; }
+    .q { font-size: 15px; font-weight: 650; }
+    .a { font-size: 13px; fill: #44403c; }
+  </style>
+  <rect width="880" height="640" fill="#fafaf9"/>
+
+  <rect x="300" y="24" width="280" height="48" rx="10" fill="#fee2e2" stroke="#b91c1c"/>
+  <text class="q" x="440" y="54" text-anchor="middle">One Inbox reminder</text>
+
+  <rect x="250" y="110" width="380" height="48" rx="10" fill="#ffffff" stroke="#a8a29e"/>
+  <text class="q" x="440" y="140" text-anchor="middle">Is there an action?</text>
+  <line x1="440" y1="72" x2="440" y2="110" stroke="#a8a29e" stroke-width="2"/>
+
+  <rect x="40" y="200" width="250" height="72" rx="10" fill="#f5f5f4" stroke="#57534e"/>
+  <text class="q" x="165" y="230" text-anchor="middle">No</text>
+  <text class="a" x="165" y="252" text-anchor="middle">Notes, Someday, or delete</text>
+  <line x1="360" y1="158" x2="165" y2="200" stroke="#a8a29e" stroke-width="2"/>
+
+  <rect x="330" y="200" width="220" height="56" rx="10" fill="#ffffff" stroke="#a8a29e"/>
+  <text class="q" x="440" y="234" text-anchor="middle">Under two minutes?</text>
+  <line x1="470" y1="158" x2="440" y2="200" stroke="#a8a29e" stroke-width="2"/>
+
+  <rect x="600" y="200" width="240" height="72" rx="10" fill="#dcfce7" stroke="#166534"/>
+  <text class="q" x="720" y="230" text-anchor="middle">Yes</text>
+  <text class="a" x="720" y="252" text-anchor="middle">Do it now</text>
+  <line x1="550" y1="228" x2="600" y2="228" stroke="#a8a29e" stroke-width="2"/>
+
+  <rect x="300" y="310" width="280" height="56" rx="10" fill="#ffffff" stroke="#a8a29e"/>
+  <text class="q" x="440" y="344" text-anchor="middle">More than one step?</text>
+  <line x1="440" y1="256" x2="440" y2="310" stroke="#a8a29e" stroke-width="2"/>
+
+  <rect x="40" y="420" width="360" height="160" rx="12" fill="#eef2ff" stroke="#4338ca"/>
+  <text class="q" x="220" y="452" text-anchor="middle">Project</text>
+  <text class="a" x="60" y="484">Outcome as the title, in an area.</text>
+  <text class="a" x="60" y="508">Later steps in the notes.</text>
+  <text class="a" x="60" y="532">Current steps as subtasks,</text>
+  <text class="a" x="60" y="554">each with one context tag.</text>
+  <line x1="390" y1="366" x2="220" y2="420" stroke="#a8a29e" stroke-width="2"/>
+
+  <rect x="480" y="420" width="360" height="160" rx="12" fill="#ccfbf1" stroke="#0f766e"/>
+  <text class="q" x="660" y="452" text-anchor="middle">One step</text>
+  <text class="a" x="500" y="484">Move it to Next.</text>
+  <text class="a" x="500" y="508">One tag: anywhere, home,</text>
+  <text class="a" x="500" y="532">out, or call.</text>
+  <text class="a" x="500" y="556">Use waiting if you are blocked.</text>
+  <line x1="500" y1="366" x2="660" y2="420" stroke="#a8a29e" stroke-width="2"/>
+</svg>
