@@ -1,0 +1,24 @@
+# GitHub Pages: Settings → Pages → Deploy from a branch → main → / (root).
+# This is a project site, so CSS and links need the repository name as baseurl.
+# If you later use a custom domain, set baseurl to "" and url to that domain.
+
+title: Reminders GTD
+description: An opinionated Getting Things Done setup for the iPhone Reminders app on iOS 27.
+author: Mark Heydon
+url: https://markheydon.github.io
+baseurl: /reminders-gtd
+
+theme: minima
+markdown: kramdown
+kramdown:
+  input: GFM
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Keep the reading width comfortable and let wide diagrams shrink.
+# GitHub Pages enables jekyll-relative-links, jekyll-optional-front-matter,
+# jekyll-default-layout, jekyll-titles-from-headings, and jekyll-readme-index
+# on its own. index.md is the homepage, so readme-index leaves README.md for
+# the repository view.
