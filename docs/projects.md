@@ -73,4 +73,4 @@ Tick the parent when the outcome is true. Completed reminders can be shown from 
 
 ## Horizons above projects
 
-Areas are the sections on Projects. Above that — goals for the year, a picture of how you want life to feel, purpose — keep **one note** in the Notes app titled something you will recognise, such as “Horizons”. The weekly review asks you to open it. Pull new projects down from it when something on that page becomes a commitment. Leave the note itself out of Reminders so it is not forever overdue.
+Areas are the sections on Projects. Above that - goals for the year, a picture of how you want life to feel, purpose - keep **one note** in the Notes app titled something you will recognise, such as “Horizons”. The weekly review asks you to open it. Pull new projects down from it when something on that page becomes a commitment. Leave the note itself out of Reminders so it is not forever overdue.

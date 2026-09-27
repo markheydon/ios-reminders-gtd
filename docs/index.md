@@ -36,15 +36,15 @@ While you are blocked on someone else, change that action’s tag to `waiting`. 
 
 ## Read it in this order
 
-1. [Why this is worth doing](why.md) — including how to start again after a break
-2. [The model](model.md) — what each Reminders feature is for
-3. [Set it up on your iPhone](setup.md) — the tap-by-tap afternoon
+1. [Why this is worth doing](why.md) - including how to start again after a break
+2. [The model](model.md) - what each Reminders feature is for
+3. [Set it up on your iPhone](setup.md) - the tap-by-tap afternoon
 4. [Capture and clarify](capture-and-clarify.md)
 5. [Do the work](do-the-work.md)
 6. [Projects, waiting, and someday](projects.md)
 7. [The weekly review](weekly-review.md)
 8. [A worked week](examples.md)
-9. [Optional extras](advanced.md) — only if the basic system already feels easy
+9. [Optional extras](advanced.md) - only if the basic system already feels easy
 10. [What Reminders will not do](limits.md)
 
 If you only do three things: create the lists in the setup guide, put current actions as tagged subtasks under projects, and open the matching smart list when you have time.

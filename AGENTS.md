@@ -1,0 +1,29 @@
+# Agent notes
+
+This repository is a written guide (not an app): Getting Things Done in the iPhone **Reminders** app on **iOS 27**. Human readers matter more than tooling polish; keep edits small and in voice with the existing pages.
+
+## Repository layout
+
+- **`docs/`** - Jekyll site (Minima, GFM). Published via GitHub Pages from `main` → `/docs`. See `docs/_config.yml` for `baseurl` (`/reminders-gtd`) and hosting notes. Do not add a custom domain on this repo (it would clash with the profile site).
+- **`README.md`** - Entry point on GitHub; its numbered guide list should stay aligned with `docs/index.md` when you change navigation or titles.
+- **`docs/images/`** - SVG diagrams referenced from the markdown.
+
+## Language and punctuation
+
+- **UK English** in all reader-facing prose: *recognise*, *behaviour*, *colour* (including setup tables), and similar. Keep US spellings only where they are the official product name (e.g. Reminders **Auto-Categorize**).
+- **No em dashes** (`—`). Use a spaced hyphen instead: ` - ` (e.g. `**Today** - dated items…`, `[setup](setup.md) - the tap-by-tap afternoon`).
+- **Quotation marks** for example reminder titles and short quoted phrases: use curly quotes `“` and `”` as in the existing docs, not straight `"`.
+
+## Voice and content
+
+- Address the reader as **you**. Calm, practical, slightly opinionated; avoid hype and filler.
+- **iPhone-first.** Mac and web are mentioned only where behaviour differs (`docs/limits.md` is the honest edge cases page).
+- **GTD attribution:** David Allen’s method is the foundation; this is an independent guide, not an Apple or David Allen product.
+- **Naming:** List names in bold (**Inbox**, **Projects**, **Next**, …). Context tags in backticks, lowercase (`anywhere`, `home`, `out`, `call`). Smart list names match the guide tables.
+- **Scope:** The main path uses four contexts; optional tags and extras live in `docs/advanced.md`. Do not expand the core taxonomy without a deliberate editorial reason.
+
+## When editing
+
+- Match the tone and structure of neighbouring sections before adding new ones.
+- Prefer updating diagrams in `docs/images/` when the model changes, not only the text.
+- Do not commit unless the user asks. Do not put secrets in the repo.

@@ -78,9 +78,9 @@ Inbox, Someday, and Weekly Review are excluded because the list filter names Pro
 
 Built-in lists you keep visible:
 
-- **Today** — dated items whose day has arrived, plus overdue ones
-- **Scheduled** — anything with a date, so you can see deadlines coming
-- **Flagged** — the few actions you have chosen for today
+- **Today** - dated items whose day has arrived, plus overdue ones
+- **Scheduled** - anything with a date, so you can see deadlines coming
+- **Flagged** - the few actions you have chosen for today
 
 ## Waiting
 
