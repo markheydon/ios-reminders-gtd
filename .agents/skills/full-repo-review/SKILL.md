@@ -1,6 +1,7 @@
 ---
 name: full-repo-review
 description: Performs a rigorous, publication-ready review of the Reminders GTD guide repository covering GTD methodology, documentation quality, proofreading, UX, consistency, and workflow simulation. Use when the user asks for a full repo review, comprehensive editorial review, pre-publish audit, or GTD/Reminders guide QA. For reviewing only the current diff (PR-style), use `/review-changes`. To rebut a review in the same chat, use `/challenge-review`.
+disable-model-invocation: true
 ---
 
 # Full repository review
@@ -17,7 +18,8 @@ description: Performs a rigorous, publication-ready review of the Reminders GTD 
    - Skim `docs/images/*.svg` labels if diagrams are cited in prose
 4. Optionally read [editorial-notes.md](../../../editorial-notes.md) for known open questions; do not treat it as published canon. Flag overlap with fixed items only if the guide still contradicts them.
 5. Cross-check **README.md** numbered guide list against **docs/index.md** navigation and titles.
-6. Do not edit files unless the user asks; output a report only.
+6. Where pages link to each other, spot-check internal `docs/*.md` links and Jekyll `baseurl` (`/reminders-gtd`) on changed or fragile paths.
+7. Do not edit files unless the user asks; output a report only.
 
 ## Citation format
 
@@ -26,6 +28,10 @@ Every substantive finding must cite the repository:
 - Markdown: `` `path/to/file.md` `` plus a short quoted excerpt or line reference when helpful.
 - Prefer citing the exact phrase that is wrong or confusing.
 - Group multiple hits of the same issue under one finding with several citations.
+
+## Persona and tone
+
+Act as a senior technical editor, GTD practitioner, QA tester, and first-time user. Review as if the guide were about to be published for people implementing Getting Things Done in Apple Reminders. Be critical and rigorous; assume the author wants honest feedback rather than encouragement.
 
 ## Report structure
 
@@ -43,127 +49,37 @@ End section **4. User Experience Review** with **Onboarding score: N/10** and a 
 
 End the report with a **Summary** table: counts by priority and top three actions.
 
-## Review mandate
+### 1. GTD Methodology Review
 
-Act as a senior technical editor, GTD practitioner, QA tester, and first-time user.
+Evaluate whether the guidance accurately reflects GTD principles. Look for:
 
-Review this repository as if it were going to be published publicly for people who want to implement Getting Things Done (GTD) using Apple Reminders.
-
-Perform a comprehensive review covering the following areas:
-
-## 1. GTD Methodology Review
-
-Evaluate whether the guidance accurately reflects GTD principles.
-
-Identify:
-- Places where GTD concepts are misrepresented
-- Steps that are unclear or incomplete
+- Misrepresented GTD concepts
+- Unclear or incomplete steps
 - Advice that could create friction in a real-world GTD workflow
-- Areas where the workflow differs from standard GTD
+- Workflow differences from standard GTD
 - Assumptions that may confuse users already familiar with GTD
 
-For any deviations from traditional GTD, explain whether they appear intentional and whether the trade-off is reasonable.
+For deviations from traditional GTD, say whether they appear intentional (see [references/REFERENCE.md](references/REFERENCE.md)) and whether the trade-off is reasonable.
 
-## 2. Documentation Quality
+### 2. Documentation Quality
 
-Review the documentation for:
+Review clarity, readability, logical structure, consistency, missing information, unnecessary complexity, and repetition. Flag sections that need rewriting, more explanation, shortening, or examples.
 
-- Clarity
-- Readability
-- Logical structure
-- Consistency
-- Missing information
-- Unnecessary complexity
-- Repetition
+### 3. Proofreading
 
-Identify sections that:
-- Need rewriting
-- Need additional explanation
-- Could be shortened
-- Could benefit from examples
+Identify grammar, spelling, punctuation, awkward phrasing, inconsistent terminology, and inconsistent capitalisation. Provide suggested replacements.
 
-## 3. Proofreading
+### 4. User Experience Review
 
-Identify:
+Assume a new user starting from scratch. Identify confusion points, missing setup instructions, unclear prerequisites, ambiguous decisions, and places where screenshots, diagrams, or examples would help.
 
-- Grammar mistakes
-- Spelling mistakes
-- punctuation issues
-- awkward phrasing
-- inconsistent terminology
-- inconsistent capitalisation
+### 5. Consistency Audit
 
-Provide suggested replacements.
+Check consistency across the repository for list names, tags, areas, projects, contexts, review processes, Apple Reminders terminology, and GTD terminology. Use [references/REFERENCE.md](references/REFERENCE.md) as the rubric.
 
-## 4. User Experience Review
+### 6. Test the Workflow
 
-Assume you are a new user starting from scratch.
-
-Identify:
-- Points where you become confused
-- Missing setup instructions
-- Unclear prerequisites
-- Ambiguous decisions
-- Areas where screenshots, diagrams, or examples would help
-
-Rate onboarding quality from 1-10 and explain why.
-
-## 5. Consistency Audit
-
-Check for consistency across the repository:
-
-- Names of lists
-- Tags
-- Areas
-- Projects
-- Contexts
-- Review processes
-- Apple Reminders terminology
-- GTD terminology
-
-Report all inconsistencies.
-
-## 6. Test the Workflow
-
-Mentally simulate the workflow for the following scenarios:
-
-- Capturing a new task
-- Creating a project
-- Deferring work
-- Reviewing next actions
-- Weekly review
-- Someday/Maybe management
-- Waiting For items
-- Completed projects
-
-For each scenario:
-- Describe what a user would do
-- Note any confusion or ambiguity
-- Suggest improvements
-
-## 7. Repository Improvement Opportunities
-
-Suggest improvements that would make the guide:
-
-- Easier to adopt
-- Easier to maintain
-- More beginner-friendly
-- More GTD-compliant
-- More opinionated where beneficial
-
-Prioritise findings as:
-
-Critical
-Major
-Minor
-Nice-to-have
-
-Output the review as a structured report with specific examples and citations from the repository.
-Be critical and rigorous. Assume the author wants honest feedback rather than encouragement.
-
-## Workflow scenarios checklist
-
-When completing section 6, trace these pages at minimum:
+Mentally simulate these scenarios. For each: what the user would do, confusion or ambiguity, and suggested improvements. Trace at minimum:
 
 | Scenario | Primary pages |
 | --- | --- |
@@ -175,6 +91,10 @@ When completing section 6, trace these pages at minimum:
 | Someday/Maybe | `docs/model.md`, `docs/advanced.md` |
 | Waiting For | context/`waiting` guidance across `docs/index.md`, `docs/do-the-work.md` |
 | Completed projects | `docs/projects.md`, `docs/weekly-review.md` |
+
+### 7. Repository Improvement Opportunities
+
+Suggest changes that make the guide easier to adopt, easier to maintain, more beginner-friendly, more GTD-compliant, or more opinionated where beneficial.
 
 ## Additional resources
 

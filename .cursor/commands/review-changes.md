@@ -7,13 +7,20 @@ Review **only the current changes** in this repository as though they were submi
 
 ## Scope
 
-1. Inspect what changed: `git status`, then `git diff` for unstaged work and `git diff --cached` for staged work. If the branch diverges from `main`, also use `git diff main...HEAD` (or the appropriate base branch) so nothing in the PR is missed.
+1. Inspect what changed: `git status`, then choose the diff scope (see **Scope modes** below).
 2. Read each touched file in full where context matters (neighbouring sections, cross-links, tables, diagram references).
 3. Do **not** re-audit the entire guide. For a publication-ready review of the whole repo, use the **full-repo-review** skill instead.
+
+### Scope modes
+
+- **Default:** Include the branch diff against `main` (or the base branch the user names) with `git diff main...HEAD`, **and** the working tree (`git diff` for unstaged, `git diff --cached` for staged) so nothing in the PR is missed.
+- **Staged only:** When the user asks for staged-only review, use `git diff --cached` only. Do not report on unstaged changes or files outside that diff.
 
 ## House style
 
 Follow [AGENTS.md](../../AGENTS.md): UK English, spaced hyphens (not em dashes), curly quotes for example titles, bold list names, lowercase context tags in backticks, iPhone-first scope.
+
+Read [`.agents/skills/full-repo-review/references/REFERENCE.md`](../../.agents/skills/full-repo-review/references/REFERENCE.md) when judging naming, tags, platform scope, or GTD trade-offs.
 
 ## Focus on
 
@@ -22,8 +29,10 @@ Follow [AGENTS.md](../../AGENTS.md): UK English, spaced hyphens (not em dashes),
 - Documentation quality
 - Clarity of explanations
 - Consistency with the rest of the repository (including README ↔ `docs/index.md` if navigation or titles changed)
+- If the diff touches `docs/setup.md` or smart-list tables, cross-check against REFERENCE and unchanged pages
 - Proofreading issues
 - User confusion risks
+- If a finding might be a known open question, check [editorial-notes.md](../../editorial-notes.md) before flagging it as a regression
 
 ## Output
 

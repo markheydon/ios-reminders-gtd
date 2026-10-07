@@ -22,6 +22,12 @@ This repository is a written guide (not an app): Getting Things Done in the iPho
 - **Naming:** List names in bold (**Inbox**, **Projects**, **Next**, …). Context tags in backticks, lowercase (`anywhere`, `home`, `out`, `call`). Smart list names match the guide tables.
 - **Scope:** The main path uses four contexts; optional tags and extras live in `docs/advanced.md`. Do not expand the core taxonomy without a deliberate editorial reason.
 
+## Editorial review (agents)
+
+- **Diff / PR-style:** `/review-changes` (`.cursor/commands/review-changes.md`)
+- **Challenge a review:** `/challenge-review` in the same chat
+- **Full publication audit:** `full-repo-review` skill under `.agents/skills/full-repo-review/`
+
 ## When editing
 
 - Match the tone and structure of neighbouring sections before adding new ones.

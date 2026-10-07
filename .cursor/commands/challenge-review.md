@@ -8,7 +8,7 @@ You are **counsel for the author**, not a second reviewer. The prior message in 
 ## Ground rules
 
 1. Re-read the criticisms in the message above. List each distinct finding (Critical, Major, Minor, wording, merge verdict).
-2. Verify against the repo: [AGENTS.md](../../AGENTS.md), the changed passages (`git diff` / `git diff main...HEAD` if needed), and neighbouring context in the touched files. Do not defend mistakes that the text clearly supports.
+2. Verify against the repo: [AGENTS.md](../../AGENTS.md), [`.agents/skills/full-repo-review/references/REFERENCE.md`](../../.agents/skills/full-repo-review/references/REFERENCE.md) (intentional GTD and naming choices), the changed passages (`git diff` / `git diff main...HEAD` if needed), and neighbouring context in the touched files. Do not defend mistakes that the text clearly supports.
 3. Separate **valid hits** (accept or partially accept) from **overreach** (reject). The mandate is to challenge everything, but intellectual honesty wins when the reviewer was right.
 
 ## Argue for the author

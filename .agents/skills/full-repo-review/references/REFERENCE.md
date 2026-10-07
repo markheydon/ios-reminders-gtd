@@ -1,4 +1,4 @@
-# Full repo review — reference
+# Full repo review - reference
 
 ## Reader-facing files
 
