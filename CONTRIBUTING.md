@@ -39,7 +39,17 @@ For setup and Reminders UI behaviour, the maintainer will not merge fixes withou
 ## Merge
 
 - Prefer **squash merge** so each logical change is one commit on `main`.
-- No automated CI; review is checklist-based.
+- GitHub Pages updates from `/docs` on merge; there is no separate site CI. **Book** exports (PDF and EPUB) build in GitHub Actions on pushes to `main` that touch guide content (draft artifacts) and when a [release is published](https://github.com/markheydon/ios-reminders-gtd/releases) (stable attachments). Editorial review stays checklist-based.
+
+### Build the book locally
+
+Install `pandoc`, `rsvg-convert`, and `texlive-xelatex` (plus `texlive-latex-extra` on Debian/Ubuntu), then from the repository root:
+
+```bash
+./scripts/build-book.sh
+```
+
+Outputs land in `dist/` (`reminders-gtd-draft.epub` and `.pdf`). For release filenames, run `./scripts/build-book.sh release`.
 
 ## Licence
 

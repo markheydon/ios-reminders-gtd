@@ -1,0 +1,38 @@
+name: Book draft
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/**'
+      - 'book/**'
+      - 'scripts/build-book.sh'
+      - '.github/workflows/book-draft.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install build tools
+        run: |
+          sudo apt-get update
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y \
+            pandoc librsvg2-bin texlive-xelatex texlive-latex-extra
+
+      - name: Build EPUB and PDF
+        run: ./scripts/build-book.sh
+
+      - name: Upload draft book
+        uses: actions/upload-artifact@v4
+        with:
+          name: book-draft
+          path: |
+            dist/reminders-gtd-draft.epub
+            dist/reminders-gtd-draft.pdf
+          retention-days: 90

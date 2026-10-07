@@ -1,0 +1,33 @@
+name: Book release
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install build tools
+        run: |
+          sudo apt-get update
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y \
+            pandoc librsvg2-bin texlive-xelatex texlive-latex-extra
+
+      - name: Build EPUB and PDF
+        env:
+          BOOK_RELEASE: 1
+          BOOK_VERSION: ${{ github.event.release.tag_name }}
+        run: ./scripts/build-book.sh release
+
+      - name: Attach to release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            dist/reminders-gtd.epub
+            dist/reminders-gtd.pdf
