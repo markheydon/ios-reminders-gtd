@@ -43,7 +43,7 @@ For setup and Reminders UI behaviour, the maintainer will not merge fixes withou
 
 ### Build the book locally
 
-Install `pandoc`, `rsvg-convert`, and `texlive-xelatex` (plus `texlive-latex-extra` on Debian/Ubuntu), then from the repository root:
+Install `pandoc`, `rsvg-convert`, and `texlive-xetex` (plus `texlive-latex-extra` on Debian/Ubuntu), then from the repository root:
 
 ```bash
 ./scripts/build-book.sh

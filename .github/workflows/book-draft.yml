@@ -29,7 +29,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo DEBIAN_FRONTEND=noninteractive apt-get install -y \
-            pandoc librsvg2-bin texlive-xelatex texlive-latex-extra
+            pandoc librsvg2-bin texlive-xetex texlive-latex-extra
 
       - name: Build EPUB and PDF
         run: ./scripts/build-book.sh
