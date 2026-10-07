@@ -18,7 +18,7 @@ disable-model-invocation: true
    - Skim `docs/images/*.svg` labels if diagrams are cited in prose
 4. Optionally read [editorial-notes.md](../../../editorial-notes.md) for known open questions; do not treat it as published canon. Flag overlap with fixed items only if the guide still contradicts them.
 5. Cross-check **README.md** numbered guide list against **docs/index.md** navigation and titles.
-6. Where pages link to each other, spot-check internal `docs/*.md` links and Jekyll `baseurl` (`/reminders-gtd`) on changed or fragile paths.
+6. Where pages link to each other, spot-check internal `docs/*.md` links and Jekyll `baseurl` (`/ios-reminders-gtd`) on changed or fragile paths.
 7. Do not edit files unless the user asks; output a report only.
 
 ## Citation format

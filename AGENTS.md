@@ -4,7 +4,7 @@ This repository is a written guide (not an app): Getting Things Done in the iPho
 
 ## Repository layout
 
-- **`docs/`** - Jekyll site (Minima, GFM). Published via GitHub Pages from `main` → `/docs`. See `docs/_config.yml` for `baseurl` (`/reminders-gtd`) and hosting notes. Do not add a custom domain on this repo (it would clash with the profile site).
+- **`docs/`** - Jekyll site (Minima, GFM). Published via GitHub Pages from `main` → `/docs`. See `docs/_config.yml` for `baseurl` (`/ios-reminders-gtd`) and hosting notes. Do not add a custom domain on this repo (it would clash with the profile site).
 - **`README.md`** - Entry point on GitHub; its numbered guide list should stay aligned with `docs/index.md` when you change navigation or titles.
 - **`docs/images/`** - SVG diagrams referenced from the markdown.
 

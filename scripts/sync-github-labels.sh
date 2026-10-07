@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 # Sync labels from .github/labels.yml to GitHub using the gh CLI.
 # Usage: ./scripts/sync-github-labels.sh [owner/repo]
-# Default repo: markheydon/reminders-gtd
+# Default repo: markheydon/ios-reminders-gtd
 
 set -euo pipefail
 
-REPO="${1:-markheydon/reminders-gtd}"
+REPO="${1:-markheydon/ios-reminders-gtd}"
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 LABELS_FILE="${ROOT}/.github/labels.yml"
 

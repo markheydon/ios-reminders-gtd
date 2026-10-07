@@ -57,4 +57,4 @@ If you only do three things: create the lists in the setup guide, put current ac
 
 ## Licence
 
-[CC BY 4.0](https://github.com/markheydon/reminders-gtd/blob/main/LICENSE). You can share and adapt this guide with credit.
+[CC BY 4.0](https://github.com/markheydon/ios-reminders-gtd/blob/main/LICENSE). You can share and adapt this guide with credit.

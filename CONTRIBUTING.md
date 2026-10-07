@@ -2,11 +2,11 @@
 
 This repository is a **written guide** for Getting Things Done in the iPhone and iPad **Reminders** app. It is not an application. Changes are prose, diagrams, and light Jekyll site config under `docs/`.
 
-The published guide lives at [markheydon.me.uk/reminders-gtd](https://markheydon.me.uk/reminders-gtd/). Merging to `main` updates GitHub Pages from the `/docs` folder.
+The published guide lives at [markheydon.me.uk/ios-reminders-gtd](https://markheydon.me.uk/ios-reminders-gtd/). Merging to `main` updates GitHub Pages from the `/docs` folder.
 
 ## Report a problem
 
-Use **Report a problem** in [GitHub Issues](https://github.com/markheydon/reminders-gtd/issues/new/choose).
+Use **Report a problem** in [GitHub Issues](https://github.com/markheydon/ios-reminders-gtd/issues/new/choose).
 
 Helpful details:
 

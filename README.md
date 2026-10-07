@@ -8,7 +8,7 @@ This is an opinionated implementation for Reminders on **iOS 27** or **iPadOS 27
 
 David Allen’s method is the foundation. This repository is an independent guide, not an Apple or David Allen product.
 
-The same guide is published at [markheydon.me.uk/reminders-gtd](https://markheydon.me.uk/reminders-gtd/).
+The same guide is published at [markheydon.me.uk/ios-reminders-gtd](https://markheydon.me.uk/ios-reminders-gtd/).
 
 ## The short version
 
@@ -58,4 +58,4 @@ If you only do three things: create the lists in the setup guide, put current ac
 
 ## Contributing
 
-Spotted an error or have a suggestion? See [CONTRIBUTING.md](CONTRIBUTING.md) and [open an issue](https://github.com/markheydon/reminders-gtd/issues/new/choose).
+Spotted an error or have a suggestion? See [CONTRIBUTING.md](CONTRIBUTING.md) and [open an issue](https://github.com/markheydon/ios-reminders-gtd/issues/new/choose).
