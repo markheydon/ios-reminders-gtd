@@ -39,7 +39,7 @@ For setup and Reminders UI behaviour, the maintainer will not merge fixes withou
 ## Merge
 
 - Prefer **squash merge** so each logical change is one commit on `main`.
-- GitHub Pages updates from `/docs` on merge; there is no separate site CI. **Book** exports (PDF and EPUB) build in GitHub Actions on pushes to `main` that touch guide content (draft artifacts) and when a [release is published](https://github.com/markheydon/ios-reminders-gtd/releases) (stable attachments). Editorial review stays checklist-based.
+- GitHub Pages updates from `/docs` on merge. **Guide check** (fast) runs on pull requests and `main`: navigation sync, `book/chapters.txt` order, broken internal links and images, and em-dash guardrails (`python3 scripts/check-guide.py`). **Book** export builds on the same content changes (verify on PR; draft artifacts on `main` only) and when a [release is published](https://github.com/markheydon/ios-reminders-gtd/releases) (stable attachments). Editorial review stays checklist-based for voice and device behaviour.
 
 ### Build the book locally
 

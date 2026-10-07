@@ -7,7 +7,7 @@ This repository is a written guide (not an app): Getting Things Done in the iPho
 - **`docs/`** - Jekyll site (Minima, GFM). Published via GitHub Pages from `main` → `/docs`. See `docs/_config.yml` for `baseurl` (`/ios-reminders-gtd`) and hosting notes. Do not add a custom domain on this repo (it would clash with the profile site).
 - **`README.md`** - Entry point on GitHub; its numbered guide list should stay aligned with `docs/index.md` when you change navigation or titles.
 - **`docs/images/`** - SVG diagrams referenced from the markdown.
-- **`book/`** - Export-only metadata and front matter for PDF/EPUB builds (`scripts/build-book.sh`). Not published on the site. Keep [`book/chapters.txt`](book/chapters.txt) in the same order as the numbered list in [`docs/index.md`](docs/index.md).
+- **`book/`** - Export-only metadata and front matter for PDF/EPUB builds (`scripts/build-book.sh`). Not published on the site. Keep [`book/chapters.txt`](book/chapters.txt) in the same order as the numbered list in [`docs/index.md`](docs/index.md). CI enforces that order and README ↔ index navigation via `scripts/check-guide.py`.
 
 ## Language and punctuation
 

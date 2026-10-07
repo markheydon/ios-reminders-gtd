@@ -1,6 +1,12 @@
 name: Book draft
 
 on:
+  pull_request:
+    paths:
+      - 'docs/**'
+      - 'book/**'
+      - 'scripts/build-book.sh'
+      - '.github/workflows/book-draft.yml'
   push:
     branches: [main]
     paths:
@@ -29,6 +35,7 @@ jobs:
         run: ./scripts/build-book.sh
 
       - name: Upload draft book
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         uses: actions/upload-artifact@v4
         with:
           name: book-draft
