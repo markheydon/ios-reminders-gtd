@@ -38,7 +38,7 @@ Capture into Inbox in one phrase. Go back to the action you were doing, or consc
 ## When a person is the constraint
 
 - You need to **place** a call or start a video chat: tag `call`, and work from Calls.
-- You will **already be messaging** them: turn on When Messaging on that reminder. Edit the reminder, tap the details, turn on When Messaging, and choose the contact. The next time you open that conversation, Reminders can surface it. Leave the context tag as whatever the action still is, or use `waiting` if you cannot move until they respond.
+- You will **already be messaging** them: turn on When Messaging on that reminder. Edit the reminder, tap the **i** info button, turn on When Messaging, and choose the contact. The next time you open that conversation, Reminders can surface it. Leave the context tag as whatever the action still is, or use `waiting` if you cannot move until they respond.
 - You have **handed it over**: retag the subtask to `waiting`, title it “Name: what you are waiting for”, and look at the Waiting smart list in the review.
 
 ## Dates during the day

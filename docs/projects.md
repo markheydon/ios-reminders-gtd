@@ -21,7 +21,7 @@ The parent has no tag and no job except to hold the outcome. The two subtasks ar
 
 Put the project in the section that matches the area of your life. Move it by dragging, or by editing the reminder if you prefer. The section is how the weekly review walks through your commitments without opening every smart list.
 
-On iPhone you can show sections as columns: in Projects, tap the more button, then **View as Columns**. It is a planning view. Day to day, the context smart lists are quicker.
+On iPhone and iPad you can show sections as columns: in Projects, tap the more button, then **View as Columns**. It is a planning view. Day to day, the context smart lists are quicker.
 
 ## How many current subtasks
 

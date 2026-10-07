@@ -1,6 +1,6 @@
 # Agent notes
 
-This repository is a written guide (not an app): Getting Things Done in the iPhone **Reminders** app on **iOS 27**. Human readers matter more than tooling polish; keep edits small and in voice with the existing pages.
+This repository is a written guide (not an app): Getting Things Done in the iPhone and iPad **Reminders** app on **iOS 27** and **iPadOS 27** (minimum for readers). Human readers matter more than tooling polish; keep edits small and in voice with the existing pages.
 
 ## Repository layout
 

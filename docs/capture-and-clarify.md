@@ -8,16 +8,16 @@ Capture and clarify are different moments. Capture is allowed to be dumb and fas
 
 Everything new goes to **Inbox**, untagged, until you have time to decide.
 
-Ways that suit a phone:
+Ways that suit a phone or tablet:
 
 - Say to Siri: “Add a reminder to post the parcel.” Then move it to Inbox if it landed elsewhere, and fix the default list when you next have a minute (see [setup](setup.md)).
 - From Mail, Safari, Maps, or Photos, tap Share, then Reminders. Add the link so the action points back at the thing.
 - Type it into the Inbox widget.
-- Use the Reminders control in Control Centre or the Action button.
+- Use the Reminders control in Control Centre, or the Action button on iPhone.
 
 A good capture is a phrase your future self will understand. “Sam” is a bad capture. “Ask Sam whether the quote includes fitting” is a good one. You still do not choose a project, tag, or date at this moment, unless the date is the whole point (“dentist Tuesday 2:30” is a calendar event; “book the dentist” is a reminder).
 
-On iOS 27, Apple Intelligence can read a sentence as you create a reminder and fill in a date, time, or location from it. “Call the dentist tomorrow at 4” becomes a timed reminder before you have decided it is a real deadline. That is useful when you mean it, and it is a trap in Inbox. For a raw capture, type the phrase and then look at the metadata box. Clear a date, time, or place you did not intend. Tags still wait until clarify. This fill-in needs an iPhone 15 Pro or later. On other iPhones running iOS 27, type the reminder and add details yourself from that same box.
+Apple Intelligence can read a sentence as you create a reminder and fill in a date, time, or location from it on a supported device. “Call the dentist tomorrow at 4” becomes a timed reminder before you have decided it is a real deadline. That is useful when you mean it, and it is a trap in Inbox. For a raw capture, type the phrase and then look at the metadata box. Clear a date, time, or place you did not intend. Tags still wait until clarify. Without Apple Intelligence, type the reminder and set details yourself from that same box.
 
 If Apple Intelligence or Siri Suggestions offers a reminder from Mail, Messages, or a web page, accept it into Inbox and clarify it with everything else. Suggested reminders are captures.
 

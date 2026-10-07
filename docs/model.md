@@ -1,6 +1,6 @@
 # The model
 
-Each Reminders feature has one job. The iPhone already has more knobs than GTD needs. This page is the map; [setup](setup.md) is the tapping.
+Each Reminders feature has one job. Your phone or tablet already has more knobs than GTD needs. This page is the map; [setup](setup.md) is the tapping.
 
 ![Where an action lives](images/where-an-action-lives.svg)
 
@@ -72,7 +72,7 @@ Each context list includes reminders that match **all** of:
 | Calls | `call` |
 | Waiting | `waiting` |
 
-On iOS 27, as since iOS 18, a smart list can show the project with its subtasks underneath. You see “Tax return filed” and, under it, the action you tagged. Tick the action. Leave the project ticked only when the outcome is done.
+A smart list can show the project with its subtasks underneath. You see “Tax return filed” and, under it, the action you tagged. Tick the action. Leave the project ticked only when the outcome is done.
 
 Inbox, Someday, and Weekly Review are excluded because the list filter names Projects and Next only. That is deliberate. A someday idea must not appear on Home just because you were standing in the kitchen when you thought of it.
 

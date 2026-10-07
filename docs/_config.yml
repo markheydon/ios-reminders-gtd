@@ -4,7 +4,7 @@
 # Do not set a custom domain on this repository. That would replace the profile site.
 
 title: Reminders GTD
-description: An opinionated Getting Things Done setup for the iPhone Reminders app on iOS 27.
+description: An opinionated Getting Things Done setup for Reminders on iOS 27 and iPadOS 27.
 author: Mark Heydon
 url: https://markheydon.me.uk
 baseurl: /reminders-gtd

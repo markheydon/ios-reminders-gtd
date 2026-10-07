@@ -1,6 +1,6 @@
 # What Reminders will not do
 
-The system in this guide is shaped around the iPhone app’s real limits. Knowing them saves you from fighting the software.
+The system in this guide is shaped around Reminders on iPhone and iPad. Knowing the app’s real limits saves you from fighting the software. The guide assumes **iOS 27** or **iPadOS 27**.
 
 ## There is no hide-until date
 
@@ -20,21 +20,21 @@ Ticking the parent ticks everything under it. The parent is the outcome, and you
 
 ## Smart lists group work under the project
 
-From iOS 18, custom smart lists can show subtasks rather than only a “has subtasks” link. In practice you will see the project title and the actions under it. Tick the action that carries the tag for the list you opened. If a sibling action from another context is visible because Apple groups the whole project, leave it for its own list.
-
-This guide is written for iOS 27. On iOS 17, smart lists are a weaker view of subtasks. Update the phone before you rely on these lists.
+Custom smart lists show subtasks under the project title, not only a “has subtasks” link. Tick the action that carries the tag for the list you opened. If a sibling action from another context is visible because Apple groups the whole project, leave it for its own list.
 
 A tag filter includes reminders that have the tag. It cannot also say “and not this other tag” in a second tag filter. That is why a waiting action **replaces** its context tag with `waiting`, and why Someday is a separate list that the smart lists do not read. One tag on a live action is also simpler to keep up.
 
 ## The web app is the wrong place to run this
 
-iCloud.com can show lists, but the pieces this system uses day to day are iPhone behaviours: When Messaging, location alerts, lock screen widgets, the share sheet, Siri, and the way smart lists present subtasks. You can glance at a list in a browser. Set the system up and run the review on the phone.
+iCloud.com can show lists, but the pieces this system uses day to day are phone-and-tablet behaviours: When Messaging, location alerts, widgets, the share sheet, Siri, and the way smart lists present subtasks. You can glance at a list in a browser. Set the system up and run the review on your iPhone or iPad.
 
-The Mac app can edit the same iCloud lists. The instructions here follow the iPhone controls on purpose, because list types, filters, and subtasks are easy to mis-tap when a guide mixes two interfaces.
+The **Action button** and some **Lock Screen** capture options are iPhone-only. On iPad, use the widget, Siri, the share sheet, Control Centre, or the app icon.
+
+The Mac app can edit the same iCloud lists. The instructions here follow the iPhone and iPad controls on purpose, because list types, filters, and subtasks are easy to mis-tap when a guide mixes two interfaces.
 
 ## Calendar is the hard landscape
 
-From iOS 18, scheduled reminders can appear in the Calendar app beside events. Use Calendar for things that happen at a time and place: the dentist appointment itself. Use a reminder for the action that gets you there: “Call dentist and book a checkup”. When the appointment exists, the call is done.
+Scheduled reminders can appear in the Calendar app beside events. Use Calendar for things that happen at a time and place: the dentist appointment itself. Use a reminder for the action that gets you there: “Call dentist and book a checkup”. When the appointment exists, the call is done.
 
 ## Reference is not a reminder
 
@@ -42,11 +42,11 @@ Reminders is a poor filing cabinet. Notes, Files, and the apps that already hold
 
 ## A sentence can smuggle in a date
 
-iOS 27 can turn “tomorrow at 4” in the title into a real due date as you type, on an iPhone 15 Pro or later. Glance at the metadata box before you tap Done. A date you did not choose is still a date, and it will show up in Today.
+Apple Intelligence can turn “tomorrow at 4” in the title into a real due date as you type, on a supported device (for example iPhone 15 Pro or later, or an iPad with Apple Intelligence). Glance at the metadata box before you tap Done. A date you did not choose is still a date, and it will show up in Today.
 
 ## Auto-Categorize will rename your areas
 
-Projects uses sections as areas of responsibility. Auto-Categorize builds its own sections. Leave it off on the GTD lists. The grocery list is where the iOS 27 sorting improvements belong.
+Projects uses sections as areas of responsibility. Auto-Categorize builds its own sections. Leave it off on the GTD lists. The grocery list is where Apple’s automatic sorting belongs.
 
 ## Tags will not rescue a skipped review
 

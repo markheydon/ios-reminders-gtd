@@ -5,11 +5,11 @@ title: Reminders GTD
 
 # Reminders GTD
 
-A follow-along way to run [Getting Things Done](https://gettingthingsdone.com/) in the iPhone Reminders app.
+A follow-along way to run [Getting Things Done](https://gettingthingsdone.com/) in the iPhone or iPad Reminders app.
 
 You already have the app. This guide is the setup and the habits: which lists to create, how a project holds its actions, and which smart lists to open when you actually have a few minutes. It is written so you can set it up in an afternoon and still recognise it in a month.
 
-This is an opinionated implementation for the **iPhone** Reminders app in **iOS 27**. The lists, sections, tags, subtasks, and smart lists it uses have been in the app since iOS 18; the tap-paths and the capture advice are written for the iOS 27 app. It leaves the Mac and web apps aside where they behave differently.
+This is an opinionated implementation for Reminders on **iOS 27** or **iPadOS 27**. It leaves the Mac and web apps aside where they behave differently.
 
 David Allen’s method is the foundation. This repository is an independent guide, not an Apple or David Allen product.
 
@@ -38,7 +38,7 @@ While you are blocked on someone else, change that action’s tag to `waiting`. 
 
 1. [Why this is worth doing](why.md) - including how to start again after a break
 2. [The model](model.md) - what each Reminders feature is for
-3. [Set it up on your iPhone](setup.md) - the tap-by-tap afternoon
+3. [Set it up on your iPhone or iPad](setup.md) - the tap-by-tap afternoon
 4. [Capture and clarify](capture-and-clarify.md)
 5. [Do the work](do-the-work.md)
 6. [Projects, waiting, and someday](projects.md)
@@ -51,7 +51,7 @@ If you only do three things: create the lists in the setup guide, put current ac
 
 ## What you need
 
-- An iPhone on iOS 27, signed into iCloud with Reminders turned on. Apple Intelligence extras, such as describing a reminder in a sentence, need an iPhone 15 Pro or later. The lists themselves do not.
+- An iPhone on iOS 27 or an iPad on iPadOS 27, signed into iCloud with Reminders turned on. Apple Intelligence extras, such as describing a reminder in a sentence, need a supported device (for example iPhone 15 Pro or later, or an iPad with Apple Intelligence). The lists themselves do not.
 - About an hour the first time, then a short weekly review
 - No extra apps
 
