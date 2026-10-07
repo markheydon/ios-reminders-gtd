@@ -1,0 +1,50 @@
+name: Report a problem
+description: Something in the guide is wrong, confusing, or does not match Reminders on your device
+title: "[fix] "
+labels:
+  - fix
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve the guide. For tap paths and on-screen labels, include your iOS or iPadOS version and what you saw on the device.
+  - type: input
+    id: page
+    attributes:
+      label: Page or section
+      description: Link to the published page, or a file under docs/ (e.g. docs/setup.md)
+      placeholder: docs/setup.md — smart list for Home
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+      description: What the guide should say or what should happen in Reminders
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened instead
+      description: Include iOS/iPadOS version and on-screen labels if relevant
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area (optional)
+      description: Helps triage; add needs-device-check via labels if setup-related
+      options:
+        - Unsure
+        - area:setup
+        - area:workflow
+        - area:model
+        - area:limits
+  - type: checkboxes
+    id: device
+    attributes:
+      label: Device check
+      options:
+        - label: This is about setup steps, smart lists, or Reminders UI labels (maintainer should verify on iOS/iPadOS 27 before merge)
+          required: false

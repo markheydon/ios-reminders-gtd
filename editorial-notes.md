@@ -66,7 +66,7 @@ Setup uses the **metadata box**; When Messaging is documented via the **i** info
 
 - [ ] All items above have a final status (`confirmed` / `rejected` / `fixed`).
 - [ ] Conditional item 3 resolved on device.
-- [ ] Agreed list of GitHub issues (title + one-line scope).
+- [ ] Agreed list of GitHub issues (title + one-line scope). When creating them, use labels from [.github/labels.yml](.github/labels.yml): typically `fix` plus `area:*`, and `needs-device-check` for setup or on-device behaviour.
 - [ ] This file updated or removed once issues exist.
 
 ### Issues to create (draft - fill in after review)

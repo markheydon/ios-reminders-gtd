@@ -55,3 +55,7 @@ If you only do three things: create the lists in the setup guide, put current ac
 ## Licence
 
 [CC BY 4.0](LICENSE). You can share and adapt this guide with credit.
+
+## Contributing
+
+Spotted an error or have a suggestion? See [CONTRIBUTING.md](CONTRIBUTING.md) and [open an issue](https://github.com/markheydon/reminders-gtd/issues/new/choose).

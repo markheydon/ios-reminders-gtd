@@ -1,0 +1,8 @@
+blank_issues: false
+contact_links:
+  - name: Read the published guide
+    url: https://markheydon.me.uk/reminders-gtd/
+    about: The live guide (same content as docs/ on main)
+  - name: Getting Things Done (method)
+    url: https://gettingthingsdone.com/
+    about: David Allen’s method; this repo is an independent Reminders implementation, not an official GTD product

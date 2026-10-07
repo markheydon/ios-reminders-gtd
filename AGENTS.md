@@ -28,6 +28,12 @@ This repository is a written guide (not an app): Getting Things Done in the iPho
 - **Challenge a review:** `/challenge-review` in the same chat
 - **Full publication audit:** `full-repo-review` skill under `.agents/skills/full-repo-review/`
 
+## Issues and pull requests
+
+- Human workflow and checklists: [CONTRIBUTING.md](CONTRIBUTING.md) and [.github/pull_request_template.md](.github/pull_request_template.md).
+- Label names and meanings: [.github/labels.yml](.github/labels.yml). Apply one change-type label and an `area:*` label when the edit is localised; use `needs-device-check` for setup and Reminders UI changes.
+- Do not open issues or pull requests unless the user asks.
+
 ## When editing
 
 - Match the tone and structure of neighbouring sections before adding new ones.

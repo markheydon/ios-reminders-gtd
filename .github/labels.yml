@@ -1,0 +1,66 @@
+# Source of truth for GitHub issue/PR labels.
+# Apply with: scripts/sync-github-labels.sh
+
+# Change type
+- name: fix
+  color: d73a4a
+  description: Wrong or misleading guidance, broken link, or contradiction with the guide model
+
+- name: content
+  color: 0075ca
+  description: New or expanded reader-facing material (not wording-only)
+
+- name: copyedit
+  color: 54aeff
+  description: Typos, UK English, punctuation, or voice (no model change)
+
+- name: diagram
+  color: 7057ff
+  description: SVG or diagram text under docs/images/
+
+- name: meta
+  color: cfd3d7
+  description: Repo tooling (.github/, AGENTS, skills, GitHub-only README)
+
+- name: question
+  color: d876e3
+  description: Needs discussion before work
+
+# Area (optional second label)
+- name: area:setup
+  color: 1d76db
+  description: Tap paths, smart lists, docs/setup.md
+
+- name: area:workflow
+  color: 1d76db
+  description: Capture, clarify, do-the-work, weekly review, examples
+
+- name: area:model
+  color: 1d76db
+  description: Lists, tags, GTD mapping (model, projects)
+
+- name: area:limits
+  color: 1d76db
+  description: Platform honesty and edge cases (limits.md)
+
+# Process
+- name: needs-device-check
+  color: fbca04
+  description: Must be verified on iOS or iPadOS 27 before merge
+
+- name: accessibility
+  color: f143ab
+  description: Barrier affecting people with disabilities
+
+# Housekeeping
+- name: duplicate
+  color: cfd3d7
+  description: This issue or pull request already exists
+
+- name: invalid
+  color: e4e669
+  description: This does not seem right for this repository
+
+- name: wontfix
+  color: ffffff
+  description: This will not be worked on

@@ -1,0 +1,33 @@
+name: Suggest an improvement
+description: Idea for clearer wording, a new example, or expanded guidance (not a factual error)
+title: "[content] "
+labels:
+  - content
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Suggestions are welcome. Small copy edits can use the copyedit label instead of content if you open the issue manually.
+  - type: input
+    id: page
+    attributes:
+      label: Page or section
+      placeholder: docs/weekly-review.md
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Your suggestion
+      description: What to add, change, or clarify
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind of change
+      options:
+        - New or expanded material (content)
+        - Wording only (copyedit)
+        - Diagram (diagram)
+        - Not sure
