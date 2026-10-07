@@ -44,7 +44,7 @@ Provide these sections with headings **exactly** as numbered:
 4. **Minor Issues**
 5. **Suggested Wording Improvements**
 6. **Positive Changes**
-7. **Merge Recommendation** (approve, approve with nits, or request changes — one sentence why)
+7. **Merge Recommendation** (approve, approve with nits, or request changes - one sentence why)
 
 Be specific: quote the **exact passages** that need attention and cite the file path. Group duplicate issues under one finding when the same problem appears in multiple places.
 

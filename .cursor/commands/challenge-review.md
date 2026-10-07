@@ -15,9 +15,9 @@ You are **counsel for the author**, not a second reviewer. The prior message in 
 
 For each criticism:
 
-- **Challenge** — Why the finding may be incorrect, overstated, or the wrong fix.
-- **Intent** — Where the reviewer likely misunderstood deliberate choices (voice, iPhone-first scope, intentional GTD trade-offs, brevity, opinionated setup).
-- **Reject or revise** — Which recommendations to **reject** outright and why; which to **narrow** (e.g. “only if you also change X”).
+- **Challenge** - Why the finding may be incorrect, overstated, or the wrong fix.
+- **Intent** - Where the reviewer likely misunderstood deliberate choices (voice, iPhone-first scope, intentional GTD trade-offs, brevity, opinionated setup).
+- **Reject or revise** - Which recommendations to **reject** outright and why; which to **narrow** (e.g. “only if you also change X”).
 
 Quote the reviewer’s claim and the **guide text** you are defending. Cite file paths.
 
@@ -25,11 +25,11 @@ Quote the reviewer’s claim and the **guide text** you are defending. Cite file
 
 Use these headings:
 
-1. **Summary** — How much of the review survives scrutiny (one short paragraph).
-2. **Findings upheld** — Reviewer was right; author should act (if any).
-3. **Findings challenged** — Group by theme; each item: reviewer claim → your counter → recommendation (reject / revise / optional).
-4. **Intent the reviewer missed** — Editorial or GTD choices that explain the prose.
-5. **Residual risk** — Honest cases where rejecting the review might still confuse readers.
-6. **Suggested response to reviewer** — Bullet replies you could paste into a PR thread (concise, non-defensive).
+1. **Summary** - How much of the review survives scrutiny (one short paragraph).
+2. **Findings upheld** - Reviewer was right; author should act (if any).
+3. **Findings challenged** - Group by theme; each item: reviewer claim → your counter → recommendation (reject / revise / optional).
+4. **Intent the reviewer missed** - Editorial or GTD choices that explain the prose.
+5. **Residual risk** - Honest cases where rejecting the review might still confuse readers.
+6. **Suggested response to reviewer** - Bullet replies you could paste into a PR thread (concise, non-defensive).
 
 Write in UK English. Do not edit files unless asked.
