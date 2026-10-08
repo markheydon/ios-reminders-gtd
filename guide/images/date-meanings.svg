@@ -5,6 +5,18 @@
     text { font-family: "DejaVu Sans", "Liberation Sans", Helvetica, Arial, sans-serif; fill: #1c1917; }
     .h { font-size: 16px; font-weight: 700; }
     .b { font-size: 14px; fill: #44403c; }
+
+    @media (prefers-color-scheme: dark) {
+      text { fill: #eceff4; }
+      .b { fill: #d8dee9; }
+      rect:first-of-type { fill: #2e3440; }
+      rect[fill="#dbeafe"] { fill: #354558; }
+      rect[fill="#ffedd5"] { fill: #4a4035; }
+      rect[fill="#eef2ff"] { fill: #3b4258; }
+      rect[stroke="#1d4ed8"] { stroke: #81a1c1; }
+      rect[stroke="#c2410c"] { stroke: #d08770; }
+      rect[stroke="#4338ca"] { stroke: #5e81ac; }
+    }
   </style>
   <rect width="880" height="360" fill="#fafaf9"/>
 

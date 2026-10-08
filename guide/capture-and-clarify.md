@@ -1,4 +1,8 @@
-# Capture and clarify
+---
+title: "Capture and clarify"
+weight: 20
+permalink: /capture-and-clarify/
+---
 
 Capture and clarify are different moments. Capture is allowed to be dumb and fast. Clarify is where you decide what the thing is. Mixing them is how tags multiply and Inbox never empties.
 

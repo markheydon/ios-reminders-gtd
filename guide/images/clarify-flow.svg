@@ -5,6 +5,25 @@
     text { font-family: "DejaVu Sans", "Liberation Sans", Helvetica, Arial, sans-serif; fill: #1c1917; }
     .q { font-size: 15px; font-weight: 600; }
     .a { font-size: 13px; fill: #44403c; }
+
+    @media (prefers-color-scheme: dark) {
+      text { fill: #eceff4; }
+      .a { fill: #d8dee9; }
+      rect:first-of-type { fill: #2e3440; }
+      rect[fill="#fee2e2"] { fill: #5c3a3a; }
+      rect[fill="#f5f5f4"] { fill: #434c5e; }
+      rect[fill="#ffffff"] { fill: #3b4252; }
+      rect[fill="#dcfce7"] { fill: #354a3d; }
+      rect[fill="#eef2ff"] { fill: #3b4258; }
+      rect[fill="#ccfbf1"] { fill: #2f4a44; }
+      rect[stroke="#b91c1c"] { stroke: #bf616a; }
+      rect[stroke="#57534e"] { stroke: #9aa3b2; }
+      rect[stroke="#a8a29e"] { stroke: #7c8594; }
+      rect[stroke="#4338ca"] { stroke: #5e81ac; }
+      rect[stroke="#166534"] { stroke: #a3be8c; }
+      rect[stroke="#0f766e"] { stroke: #8fbcbb; }
+      line[stroke="#a8a29e"] { stroke: #7c8594; }
+    }
   </style>
   <rect width="880" height="640" fill="#fafaf9"/>
 

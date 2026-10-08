@@ -1,4 +1,8 @@
-# Optional extras
+---
+title: "Optional extras"
+weight: 40
+permalink: /advanced/
+---
 
 Set the basic system up first and use it for a couple of weeks. Add something from this page only when a specific friction shows up, and add one thing at a time. Every extra tag is a decision you must make during clarify, so each one has to earn that cost.
 

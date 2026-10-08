@@ -1,6 +1,8 @@
 # Editorial notes (working)
 
-Working notes while the guide is read on a real iPhone or iPad. This file is **not** part of the published guide (it is not linked from `README.md` or `docs/index.md`). When reading is finished, turn confirmed items into GitHub issues and then archive or delete what has been actioned.
+Working notes while the guide is read on a real iPhone or iPad. This file is **not** part of the published guide (it is not linked from `README.md` or `guide/_index.md`). When reading is finished, turn confirmed items into GitHub issues and then archive or delete what has been actioned.
+
+**Site (Oct 2026):** Findings **4**, **10**, and **54** (web footer) are implemented via Hugo Book (`website/` builds from `guide/`). Content findings **5–53** remain for a later pass. See [docs/README.md](docs/README.md).
 
 **Status key:** `open` · `confirmed` · `rejected` (not a real problem) · `fixed` (no issue needed)
 

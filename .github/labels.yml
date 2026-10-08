@@ -16,7 +16,7 @@
 
 - name: diagram
   color: 7057ff
-  description: SVG or diagram text under docs/images/
+  description: SVG or diagram text under guide/images/
 
 - name: meta
   color: cfd3d7
@@ -29,7 +29,7 @@
 # Area (optional second label)
 - name: area:setup
   color: 1d76db
-  description: Tap paths, smart lists, docs/setup.md
+  description: Tap paths, smart lists, guide/setup.md
 
 - name: area:workflow
   color: 1d76db

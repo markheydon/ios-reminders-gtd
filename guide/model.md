@@ -1,4 +1,8 @@
-# The model
+---
+title: "The model"
+weight: 11
+permalink: /model/
+---
 
 Each Reminders feature has one job. Your phone or tablet already has more knobs than GTD needs. This page is the map; [setup](setup.md) is the tapping.
 

@@ -4,6 +4,8 @@ on:
   pull_request:
     paths:
       - 'README.md'
+      - 'guide/**'
+      - 'website/**'
       - 'docs/**'
       - 'book/**'
       - 'scripts/check-guide.py'
@@ -12,6 +14,8 @@ on:
     branches: [main]
     paths:
       - 'README.md'
+      - 'guide/**'
+      - 'website/**'
       - 'docs/**'
       - 'book/**'
       - 'scripts/check-guide.py'

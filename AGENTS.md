@@ -4,10 +4,11 @@ This repository is a written guide (not an app): Getting Things Done in the iPho
 
 ## Repository layout
 
-- **`docs/`** - Jekyll site (Minima, GFM). Published via GitHub Pages from `main` → `/docs`. See `docs/_config.yml` for `baseurl` (`/ios-reminders-gtd`) and hosting notes. Do not add a custom domain on this repo (it would clash with the profile site).
-- **`README.md`** - Entry point on GitHub; its numbered guide list should stay aligned with `docs/index.md` when you change navigation or titles.
-- **`docs/images/`** - SVG diagrams referenced from the markdown.
-- **`book/`** - Export-only metadata and front matter for PDF/EPUB builds (`scripts/build-book.sh`). Not published on the site. Keep [`book/chapters.txt`](book/chapters.txt) in the same order as the numbered list in [`docs/index.md`](docs/index.md). CI enforces that order and README ↔ index navigation via `scripts/check-guide.py`.
+- **`guide/`** - Reader-facing markdown and [`guide/images/`](guide/images/) (canonical source). Edit here for prose and diagrams.
+- **`website/`** - Hugo shell (Hugo Book via Go modules in [`website/go.mod`](website/go.mod)). Builds the public site from `guide/`; published via GitHub Actions on merge to `main`. `baseURL` is `/ios-reminders-gtd` on [markheydon.me.uk](https://markheydon.me.uk/ios-reminders-gtd/). Do not add a custom domain on this repo (it would clash with the profile site).
+- **`docs/`** - Contributor notes (not published chapters). Start with [`docs/README.md`](docs/README.md).
+- **`README.md`** - Entry point on GitHub; its numbered guide list should stay aligned with [`guide/_index.md`](guide/_index.md) when you change navigation or titles.
+- **`book/`** - Export-only metadata and front matter for PDF/EPUB builds (`scripts/build-book.sh`). Keep [`book/chapters.txt`](book/chapters.txt) in the same order as the numbered list on the home page. CI enforces that order and README ↔ index navigation via `scripts/check-guide.py`.
 
 ## Language and punctuation
 
@@ -18,10 +19,10 @@ This repository is a written guide (not an app): Getting Things Done in the iPho
 ## Voice and content
 
 - Address the reader as **you**. Calm, practical, slightly opinionated; avoid hype and filler.
-- **iPhone-first.** Mac and web are mentioned only where behaviour differs (`docs/limits.md` is the honest edge cases page).
+- **iPhone-first.** Mac and web are mentioned only where behaviour differs (`guide/limits.md` is the honest edge cases page).
 - **GTD attribution:** David Allen’s method is the foundation; this is an independent guide, not an Apple or David Allen product.
 - **Naming:** List names in bold (**Inbox**, **Projects**, **Next**, …). Context tags in backticks, lowercase (`anywhere`, `home`, `out`, `call`). Smart list names match the guide tables.
-- **Scope:** The main path uses four contexts; optional tags and extras live in `docs/advanced.md`. Do not expand the core taxonomy without a deliberate editorial reason.
+- **Scope:** The main path uses four contexts; optional tags and extras live in `guide/advanced.md`. Do not expand the core taxonomy without a deliberate editorial reason.
 
 ## Editorial review (agents)
 

@@ -1,0 +1,30 @@
+name: Hugo Deploy
+
+# Publishes the guide to GitHub Pages on every merge to main.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "guide/**"
+      - "website/**"
+      - "scripts/invoke-hugo-site.sh"
+      - "scripts/Invoke-HugoSite.ps1"
+      - ".github/workflows/hugo-build.yml"
+      - ".github/workflows/hugo-deploy.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    uses: ./.github/workflows/hugo-build.yml
+    with:
+      deploy: true

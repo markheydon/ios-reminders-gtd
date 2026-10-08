@@ -1,4 +1,7 @@
-# Why this is worth doing
+---
+title: "Why this is worth doing"
+weight: 10
+---
 
 Getting Things Done is a way to get commitments out of your head and into a system you trust enough to stop rehearsing them. David Allen’s phrase for that trust is “mind like water”: the right reaction at the right moment, and a quiet head the rest of the time.
 

@@ -1,0 +1,11 @@
+{{- $dest := .Destination -}}
+{{- $parsed := urls.Parse $dest -}}
+{{- if not $parsed.IsAbs -}}
+  {{- if strings.HasPrefix $dest "images/" -}}
+    {{- $dest = $dest | relURL -}}
+  {{- else -}}
+    {{- $dest = $dest | safeURL -}}
+  {{- end -}}
+{{- end -}}
+<img src="{{ $dest }}" alt="{{ .Text }}"{{ with .Title }} title="{{ . }}"{{ end }}/>
+{{- /**/ -}}

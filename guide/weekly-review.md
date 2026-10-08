@@ -1,4 +1,8 @@
-# The weekly review
+---
+title: "The weekly review"
+weight: 30
+permalink: /weekly-review/
+---
 
 This is the habit that makes the rest true. Without it, smart lists slowly fill with actions you finished in real life and never ticked, and with projects that have no next step.
 

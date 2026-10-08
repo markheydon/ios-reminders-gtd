@@ -3,7 +3,8 @@ name: Book draft
 on:
   pull_request:
     paths:
-      - 'docs/**'
+      - 'guide/**'
+      - 'website/**'
       - 'book/**'
       - 'scripts/build-book.sh'
       - '.github/workflows/book-draft.yml'
@@ -11,7 +12,8 @@ on:
   push:
     branches: [main]
     paths:
-      - 'docs/**'
+      - 'guide/**'
+      - 'website/**'
       - 'book/**'
       - 'scripts/build-book.sh'
       - '.github/workflows/book-draft.yml'

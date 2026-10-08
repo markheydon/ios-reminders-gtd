@@ -1,8 +1,8 @@
 # Contributing
 
-This repository is a **written guide** for Getting Things Done in the iPhone and iPad **Reminders** app. It is not an application. Changes are prose, diagrams, and light Jekyll site config under `docs/`.
+This repository is a **written guide** for Getting Things Done in the iPhone and iPad **Reminders** app. It is not an application. Reader-facing chapters live under [`guide/`](guide/). Build and preview notes are in [docs/README.md](docs/README.md).
 
-The published guide lives at [markheydon.me.uk/ios-reminders-gtd](https://markheydon.me.uk/ios-reminders-gtd/). Merging to `main` updates GitHub Pages from the `/docs` folder.
+The published guide lives at [markheydon.me.uk/ios-reminders-gtd](https://markheydon.me.uk/ios-reminders-gtd/). Merging to `main` rebuilds the Hugo site and deploys it via GitHub Actions (see [docs/README.md](docs/README.md) for Pages settings).
 
 ## Report a problem
 
@@ -10,7 +10,7 @@ Use **Report a problem** in [GitHub Issues](https://github.com/markheydon/ios-re
 
 Helpful details:
 
-- Which page or section (link or file under `docs/`).
+- Which page or section (link or file under `guide/`).
 - What you expected the guide to say or what step to do.
 - If it is about tap paths, smart lists, or on-screen labels: your **iOS or iPadOS version** and what you actually saw. Add the `needs-device-check` label if you open the issue manually.
 
@@ -31,15 +31,19 @@ For setup and Reminders UI behaviour, the maintainer will not merge fixes withou
 - [ ] Read [AGENTS.md](AGENTS.md).
 - [ ] Run an editorial review on the diff (maintainer: `/review-changes` in Cursor; humans: read the changed sections and neighbours).
 - [ ] Apply labels: one **change type** (`fix`, `content`, `copyedit`, `diagram`, `meta`, `dependencies`, or `question`) and an **area** label when the change is localised (`area:setup`, `area:workflow`, `area:model`, `area:limits`). See [.github/labels.yml](.github/labels.yml). Dependabot PRs use `dependencies` (see [.github/dependabot.yml](.github/dependabot.yml)).
-- [ ] If you changed navigation or page titles: keep [README.md](README.md) numbered list aligned with [docs/index.md](docs/index.md).
-- [ ] If you changed the model (lists, tags, workflows): update diagrams in [docs/images/](docs/images/) as well as prose.
-- [ ] If you touched [docs/setup.md](docs/setup.md), smart-list tables, or Reminders UI strings: label `needs-device-check` and state verification in the PR (device and result, or “not verified yet - do not merge”).
+- [ ] If you changed navigation or page titles: keep [README.md](README.md) numbered list aligned with [guide/_index.md](guide/_index.md).
+- [ ] If you changed the model (lists, tags, workflows): update diagrams in [guide/images/](guide/images/) as well as prose.
+- [ ] If you touched [guide/setup.md](guide/setup.md), smart-list tables, or Reminders UI strings: label `needs-device-check` and state verification in the PR (device and result, or “not verified yet - do not merge”).
 - [ ] Skim [editorial-notes.md](editorial-notes.md) for known open questions; do not reopen settled `fixed` items without reason.
 
 ## Merge
 
 - Prefer **squash merge** so each logical change is one commit on `main`.
-- GitHub Pages updates from `/docs` on merge. **Guide check** (fast) runs on pull requests and `main`: navigation sync, `book/chapters.txt` order, broken internal links and images, and em-dash guardrails (`python3 scripts/check-guide.py`). **Book** export builds on the same content changes; pull requests and `main` produce a **book-draft** artifact for proofreading, and a [published release](https://github.com/markheydon/ios-reminders-gtd/releases) attaches stable PDF and EPUB. CI uses the `pandoc/extra` container image (Pandoc and XeLaTeX preinstalled). Editorial review stays checklist-based for voice and device behaviour.
+- GitHub Pages updates from the Hugo workflow on merge. **Guide check** (fast) runs on pull requests and `main`: navigation sync, `book/chapters.txt` order, broken internal links and images, and em-dash guardrails (`python3 scripts/check-guide.py`). **Hugo validate** builds the site on pull requests; **Hugo deploy** publishes on `main`. **Book** export builds on the same content changes; pull requests and `main` produce a **book-draft** artifact for proofreading, and a [published release](https://github.com/markheydon/ios-reminders-gtd/releases) attaches stable PDF and EPUB. CI uses the `pandoc/extra` container image (Pandoc and XeLaTeX preinstalled). Editorial review stays checklist-based for voice and device behaviour.
+
+### Preview the site locally
+
+See [docs/README.md](docs/README.md) (`./scripts/invoke-hugo-site.sh serve` or `preview`).
 
 ### Build the book locally
 

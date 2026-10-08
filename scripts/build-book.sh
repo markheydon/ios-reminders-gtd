@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Build combined EPUB and PDF from docs/ chapters (see book/chapters.txt).
+# Build combined EPUB and PDF from guide/ chapters (see book/chapters.txt).
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
@@ -102,7 +102,7 @@ for chapter in "${CHAPTER_PATHS[@]}"; do
 done
 cp book/front-matter.md "$PDF_DOCS/front-matter.md"
 PDF_FRONT_MATTER="$PDF_DOCS/front-matter.md"
-for svg in docs/images/*.svg; do
+for svg in guide/images/*.svg; do
   base="$(basename "$svg" .svg)"
   rsvg-convert -w 1200 "$svg" -o "$PDF_DOCS/images/${base}.png"
 done
@@ -142,7 +142,7 @@ PANDOC_COMMON=(
 pandoc "${PANDOC_COMMON[@]}" \
   book/front-matter.md \
   "${CHAPTER_PATHS[@]}" \
-  --resource-path=docs:book \
+  --resource-path=guide:book \
   --epub-cover-image=book/assets/cover.svg \
   -o "$EPUB_OUT"
 

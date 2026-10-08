@@ -18,7 +18,7 @@ Capture into **Inbox**. Clarify it into a small set of lists. Do your work from 
 
 A project is a reminder. The things you can do on it right now are **subtasks**, and each subtask has **one context tag**. A smart list for that tag gathers those actions from every active project.
 
-![Projects hold tagged subtasks, and smart lists gather them by context](docs/images/system-map.svg)
+![Projects hold tagged subtasks, and smart lists gather them by context](guide/images/system-map.svg)
 
 Four contexts are enough:
 
@@ -35,16 +35,16 @@ While you are blocked on someone else, change that action’s tag to `waiting`. 
 
 ## Read it in this order
 
-1. [Why this is worth doing](docs/why.md) - including how to start again after a break
-2. [The model](docs/model.md) - what each Reminders feature is for
-3. [Set it up on your iPhone or iPad](docs/setup.md) - the tap-by-tap afternoon
-4. [Capture and clarify](docs/capture-and-clarify.md)
-5. [Do the work](docs/do-the-work.md)
-6. [Projects, waiting, and someday](docs/projects.md)
-7. [The weekly review](docs/weekly-review.md)
-8. [A worked week](docs/examples.md)
-9. [Optional extras](docs/advanced.md) - only if the basic system already feels easy
-10. [What Reminders will not do](docs/limits.md)
+1. [Why this is worth doing](guide/why.md) - including how to start again after a break
+2. [The model](guide/model.md) - what each Reminders feature is for
+3. [Set it up on your iPhone or iPad](guide/setup.md) - the tap-by-tap afternoon
+4. [Capture and clarify](guide/capture-and-clarify.md)
+5. [Do the work](guide/do-the-work.md)
+6. [Projects, waiting, and someday](guide/projects.md)
+7. [The weekly review](guide/weekly-review.md)
+8. [A worked week](guide/examples.md)
+9. [Optional extras](guide/advanced.md) - only if the basic system already feels easy
+10. [What Reminders will not do](guide/limits.md)
 
 If you only do three things: create the lists in the setup guide, put current actions as tagged subtasks under projects, and open the matching smart list when you have time.
 

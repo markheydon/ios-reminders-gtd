@@ -1,4 +1,8 @@
-# Projects, waiting, and someday
+---
+title: "Projects, waiting, and someday"
+weight: 22
+permalink: /projects/
+---
 
 ## What a project looks like
 
