@@ -33,9 +33,3 @@ params:
   BookSection: "*"
   BookSearch: true
   BookPortableLinks: true
-
-menu:
-  after:
-    - name: GitHub
-      url: "https://github.com/markheydon/ios-reminders-gtd"
-      weight: 10
