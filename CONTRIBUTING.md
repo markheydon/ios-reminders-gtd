@@ -30,7 +30,7 @@ For setup and Reminders UI behaviour, the maintainer will not merge fixes withou
 
 - [ ] Read [AGENTS.md](AGENTS.md).
 - [ ] Run an editorial review on the diff (maintainer: `/review-changes` in Cursor; humans: read the changed sections and neighbours).
-- [ ] Apply labels: one **change type** (`fix`, `content`, `copyedit`, `diagram`, `meta`, or `question`) and an **area** label when the change is localised (`area:setup`, `area:workflow`, `area:model`, `area:limits`). See [.github/labels.yml](.github/labels.yml).
+- [ ] Apply labels: one **change type** (`fix`, `content`, `copyedit`, `diagram`, `meta`, `dependencies`, or `question`) and an **area** label when the change is localised (`area:setup`, `area:workflow`, `area:model`, `area:limits`). See [.github/labels.yml](.github/labels.yml). Dependabot PRs use `dependencies` (see [.github/dependabot.yml](.github/dependabot.yml)).
 - [ ] If you changed navigation or page titles: keep [README.md](README.md) numbered list aligned with [docs/index.md](docs/index.md).
 - [ ] If you changed the model (lists, tags, workflows): update diagrams in [docs/images/](docs/images/) as well as prose.
 - [ ] If you touched [docs/setup.md](docs/setup.md), smart-list tables, or Reminders UI strings: label `needs-device-check` and state verification in the PR (device and result, or “not verified yet - do not merge”).
