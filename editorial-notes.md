@@ -44,13 +44,15 @@ Working notes while the guide is read on a real iPhone or iPad. This file is **n
 
 ## Your notes (during proofread)
 
-**Paused 7 Oct 2026.** Prose pass is done except `docs/advanced.md`, which waits until after a real run of `docs/setup.md`. Findings 4–33 stay `open`. The published guide has not been edited from this pass.
+**Next session: review the findings.** Every guide page has been read. `docs/setup.md` was followed on an iPad. The published guide has not been edited from this pass. Findings 4–53 are below. Finding 25 is rejected. Start with the open rows and decide what to change, what to leave, and which GitHub issues to open.
 
-Still to do:
+Still open before or during that review:
 
-- Device pass, possibly this evening: follow `docs/setup.md` on the phone. Also confirm When Messaging on `docs/do-the-work.md`, and the packing-list case (item 3) on `docs/projects.md`.
-- Then read `docs/advanced.md`.
-- End review of the open findings, then GitHub issues. Tickler and Routines are drafted below as later additions, not created yet.
+- Confirm When Messaging on `docs/do-the-work.md` (circled **i** and a contact).
+- Packing-list case on `docs/projects.md` (item 3). Device result is still blank.
+- Finding 45: context smart lists versus tapping a tag. Tied to finding 40 (one list tick on iPad).
+- Finding 46: Waiting smart list matches **any** of tag `waiting` or list **Waiting**. Agreed in principle. Not tried on device yet.
+- Tickler, Routines, and Columns-on-other-lists are drafted at the bottom as later additions. Do not write them in this review.
 
 Read in whatever order you find the pages, and say what you noticed in chat. Notes get written here. The published guide stays as it is until a later pass decides what to change.
 
@@ -60,11 +62,11 @@ A page stays unticked while you are still in it. A tick means that page is finis
 
 Phone in hand. One sitting per page is enough, especially setup.
 
-- [ ] `docs/setup.md` - content read (findings 23–25). Device pass still to do after the proofread: follow the afternoon once, and check button names, list names, the tag-setup callout at the start of §5, and the horizons note in §7.
+- [x] `docs/setup.md` - content read (findings 23–25) and followed on iPad, 8 Oct 2026 (findings 34–48). Finding 25 withdrawn.
 - [ ] `docs/do-the-work.md` - content read (findings 28–29). Still to confirm on device: When Messaging is behind the **i** info button, and choosing a contact works as written.
 - [ ] `docs/projects.md` - content read (finding 30). Device result for the packing-list case (open item 3 above) still blank.
 - [x] `docs/weekly-review.md` - content fine. No findings.
-- [ ] `docs/advanced.md` - not read. Dogfood after the setup run-through. Tickler and routines are future issues, not part of this proofread.
+- [x] `docs/advanced.md` - finished. Findings 50–53. Happy with the rest. Location and the **i** button were not rechecked on this pass.
 - [x] `docs/limits.md` - content fine. No findings.
 
 Quieter pass. Voice, links, and names staying consistent. No tap-by-tap unless a sentence sends you to a control.
@@ -87,7 +89,7 @@ The guide uses two different places in Reminders. Compare both with the phone an
 
 | Page | What the guide says | What you see | Status |
 | --- | --- | --- | --- |
-| `docs/setup.md` | Tags, dates, and other metadata are in the box around the reminder | | open |
+| `docs/setup.md` | Tags, dates, and other metadata are in the box around the reminder | On iPad that phrase does not match the screen. The control seen is the circled **i**, which appears when you select the reminder line. Long-press is the other guess. See finding 39. | open |
 | `docs/do-the-work.md`, `docs/advanced.md` | When Messaging is behind the **i** info button (advanced also puts notes and priority there) | | open |
 
 #### Other findings
@@ -113,9 +115,9 @@ The guide uses two different places in Reminders. Compare both with the phone an
 | 20 | `docs/model.md` (Projects and subtasks) | “Next physical action” should be a bigger point. The subtasks bullet only says “the actions you could do now”, which is softer than a physical, visible action. Ties to finding 17 (a clarified action starts with a verb). | open |
 | 21 | Guide-wide (bullets) | Sentences in bullet lists should end with a full stop. Preference raised while reading `docs/model.md`. Apply across the guide when this is decided. | open |
 | 22 | `docs/model.md` (built-in lists) | Keep “**Flagged** - the few actions you have chosen for today”, and add that they are your current focus. A reader should not think that flagging an action, then not finishing it today, makes the flag disappear tomorrow. It does not. | open |
-| 23 | `docs/setup.md` (opening) | “Budget about an hour” sounds wrong. Keep the light tone, and say the steps take about an hour to complete. Something like “The following setup steps will take about an hour to complete.” Content note only. The afternoon has not been run on a phone yet. | open |
+| 23 | `docs/setup.md` (opening) | “Budget about an hour” sounds wrong. Keep the light tone, and say the steps take about an hour to complete. Something like “The following setup steps will take about an hour to complete.” | open |
 | 24 | `docs/setup.md` (§5) | “Drag these five into the GTD group, under the standard lists.” Say that these five are the smart lists just created (Anywhere, Home, Out, Calls, Waiting), not the standard lists from §2. | open |
-| 25 | Guide-wide (list name) | The **Weekly Review** list should be clearer that it is not a day-to-day list. A name like **Weekly Review Checklist** would do that. Raised on `docs/setup.md`. The list is named **Weekly Review** throughout the guide (`docs/model.md` already calls it a standing checklist and “a tool, not a place you store work”). | open |
+| 25 | Guide-wide (list name) | Withdrawn after the iPad run. Keep the list name **Weekly Review**. A longer name fought the template step: recreating the list from the template is simpler when the name stays plain. See finding 42. | rejected |
 | 26 | `docs/capture-and-clarify.md` (Capture) | Beside “until you have time to decide”, add a short side note that it is good practice to schedule time to clarify. Include a version of the GTD line on this. Substance to check before any quotation goes in the guide: clarifying is deciding, not doing the work, and an inbox only stays trustworthy if you empty it on a regular rhythm. The weekly review is the backstop. The page already says to open Inbox after meetings, at the end of the day, or when it starts to nag. | open |
 | 27 | `docs/capture-and-clarify.md` (Capture and Clarify) | Say the two naming moments apart. A capture can be rough, even nonsense, as long as it will remind you what the thing was. A clarified action starts with a doing verb. The page already prefers a phrase over a bare “Sam”, and step 4 already rewrites a one-step title as a physical action (“Email the insurer the photos”). Ties to findings 17 and 20. | open |
 | 28 | `docs/do-the-work.md` (flags) | Same point as finding 22. Flags can mean your current focus, not only “chosen for today”. Nothing clears them automatically: a flag stays until you complete the action or remove the flag. Keep the limit of a few at a time (up to three, and the “couple of screens” signal). The page already says you can leave flags if tomorrow should start there. | open |
@@ -124,6 +126,26 @@ The guide uses two different places in Reminders. Compare both with the phone an
 | 31 | `docs/examples.md` (voice) | Rewrite the third person as *you*. The opening “someone restarting after a quiet couple of months” and the later “They have twenty minutes…” read better as “You have 20 minutes…”. The figure `20` is the number rule in finding 15. | open |
 | 32 | `README.md` (The short version) | Same problem as findings 6, 7, and 16. “A project is a reminder” skips that a project is an outcome. The short version is weighted toward projects. GTD’s day-to-day weight is next actions. Projects stay important. The balance is off. | open |
 | 33 | `README.md` (role) | The README repeats the published guide: short version, reading order, and what you need. A repository README should be about the project (what it is, where it is published, how to contribute). The guide itself belongs on the site. Finding 5 (“repository”) is the same sentence on `docs/index.md`. | open |
+| 34 | `docs/setup.md` (§2) | On iPad, editing lists is **Edit Lists** under the **…** menu. The guide says tap **Edit**. | open |
+| 35 | `docs/setup.md` (opening) | The steps assume a blank Reminders app. Some readers will arrive with a lapsed GTD setup that did not come from this guide. Say so near the start. | open |
+| 36 | `docs/setup.md` (§2) | If other accounts exist (Exchange showed on this iPad), creating a list can ask which account. It needs to be iCloud. A short note at the top of “create the lists” is enough. Do not explain providers. | open |
+| 37 | `docs/setup.md` (§2 and §5) | The List Info sheet is unnamed colour dots and unnamed icons. The guide’s names (Red, Indigo, Tray, Folder, Arrow, and the rest) are not labels on that sheet, so a reader cannot tell which swatch or glyph to tap. Seen on iPad, 7 Oct 2026. | open |
+| 38 | Guide-wide (Groceries) | Grocery mentions read as a list the reader forgot to create. A short “if you are using it” is enough. Raised on `docs/setup.md` §3 and §6. Also `docs/model.md` and `docs/limits.md`. | open |
+| 39 | Guide-wide (metadata box) | “In the box around the reminder” does not match the iPad. What appears is the circled **i** when you select the reminder line. Long-press is the other possibility. The phrase is also in `docs/capture-and-clarify.md`, `docs/limits.md`, and `docs/advanced.md`. | open |
+| 40 | `docs/setup.md` (§5) | On this iPad you cannot tick more than one list in a smart list’s Lists filter, so the step “tick **Projects** and **Next**” cannot be done. iPhone not checked. This is the filter the context lists rely on. | open |
+| 41 | `docs/setup.md` (§5) | Do not offer both All Selected and Any Selected. Tell the reader to use **Any Selected**, so a context can gain extra tags later without another decision now. | open |
+| 42 | `docs/setup.md` (§7), `docs/weekly-review.md` | A template does not appear to copy its reminders into a list that already exists. Deleting the list and creating it again from the template may be the path that works. `docs/setup.md` also says you can delete the list’s contents and add the template again, which is the doubtful path. `docs/weekly-review.md` already says create a new list from the template and delete the tired copy. | open |
+| 43 | `docs/setup.md` (§4 and §9) | **Tag setup** is created in **Next** and deleted from **Next**, so the page agrees with itself. It should be created and deleted in **Inbox**: it is a throwaway, and Inbox is where throwaways belong. | open |
+| 44 | `docs/setup.md` (§5) | §2 gives an order for the five standard lists only. After the smart lists exist, give the order of every list in the GTD group so the reader does not have to invent it. | open |
+| 45 | `docs/setup.md` (model) | If the reader can open a tag directly, what are the context smart lists for? Torn. Do not change the model until this is discussed. Tied to finding 40: the list filter was the reason a smart list was more than a tag. | open |
+| 46 | `docs/setup.md` (model) | **Next** holds only next physical actions you could do now. One-step waits go on a standard list **Waiting**, not on **Next**. Project waits stay under the project, tagged `waiting`. The view is a smart list (**Waiting** or **Waiting For**) set to match **any** filter: tag `waiting`, or list **Waiting**. That is an or, so it does not need two lists ticked (finding 40). Not tried on device yet. The standard list and the smart list need different names if both exist. Context lists (Anywhere, Home, Out, Calls) are unchanged. | open |
+| 49 | Guide-wide (projects versus lists) | Footnote, not a redesign. In the book, the Projects list is an index of outcomes. A current action is parked on a context Next Actions list, or on Waiting For if it is blocked on someone else. It is not stored under the project. Project support holds the plan and later steps, not the current action. This guide keeps the current action as a subtask on the project and gathers it with a smart list, which is a Reminders compromise. Official note that software may link a project to its action: [The GTD Approach to Linking Next Actions and Projects](https://gettingthingsdone.com/2020/06/the-gtd-approach-to-linking-next-actions-and-projects/). The footnote should say the strict split, and that later steps in the project notes are the part Allen did want kept with the project. | open |
+| 50 | `docs/advanced.md` (opening) | “Set the basic system up first” should link to [setup](docs/setup.md) so the reader can get there in one tap. | open |
+| 51 | `docs/advanced.md` (opening) | Expand “Every extra tag is a decision you must make during clarify, so each one has to earn that cost.” Say what the cost is: more tags mean more admin, more time babysitting the system instead of doing the work, and a system you are more likely to abandon. | open |
+| 52 | `docs/advanced.md` (Time and energy) | The optional smart lists for `quick`, `focus`, and `low` say “lists Projects and Next”. On iPad a smart list cannot tick more than one list (finding 40), so that filter cannot be written as both lists. | open |
+| 53 | `docs/advanced.md` (Columns) | Columns for energy on **Next** (Deep Focus and similar) is the wrong tool. Keep that simple: tags, as this page already suggests, not columns. Columns on lists other than Projects may be worth a later look if a low-admin use appears. No such use is clear yet. Do not add it in this pass. | open |
+| 47 | `docs/setup.md`, `docs/why.md` | Move “Starting again after a break” into setup, or put a short version there. Readers are either new, or they already have a system and may only ever read the setup page. | open |
+| 48 | Book export | `book/chapters.txt` does not include `docs/index.md`, so the short version and “if you only do three things” are missing from the PDF and EPUB. The file is the site home, which is why it is not a chapter. Decide whether that content moves into an early chapter so the book still has it. Ties to finding 9. | open |
 
 ---
 
@@ -140,3 +162,4 @@ The guide uses two different places in Reminders. Compare both with the phone an
 | --- | --- | --- |
 | Add a Tickler list for items that should come back on a date | Future addition. Not in the guide (checked `docs/advanced.md`). Do not write it during this proofread. | later |
 | Add Routines for regular repeating work | Future addition. Not in the guide. Do not write it during this proofread. | later |
+| Consider Columns on lists other than Projects | Finding 53. Only if a low-admin use shows up. Not in this pass. | later |
