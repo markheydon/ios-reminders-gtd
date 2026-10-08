@@ -53,6 +53,10 @@
   description: Barrier affecting people with disabilities
 
 # Housekeeping
+- name: dependencies
+  color: 0366d6
+  description: Dependabot or other automated dependency updates (.github/workflows, Actions)
+
 - name: duplicate
   color: cfd3d7
   description: This issue or pull request already exists

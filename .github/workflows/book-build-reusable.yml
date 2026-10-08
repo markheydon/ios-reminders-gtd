@@ -29,7 +29,7 @@ jobs:
     container:
       image: pandoc/extra:3.6
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v7
 
       - name: Ensure build helpers
         run: |
@@ -72,7 +72,7 @@ jobs:
 
       - name: Upload build output for release attach
         if: inputs.release
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: book-dist
           path: |
@@ -82,7 +82,7 @@ jobs:
 
       - name: Upload draft book
         if: inputs.upload_draft
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: book-draft
           path: |
