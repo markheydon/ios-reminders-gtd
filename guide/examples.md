@@ -1,4 +1,8 @@
-# A worked week
+---
+title: "A worked week"
+weight: 31
+permalink: /examples/
+---
 
 This is one ordinary week for someone restarting after a quiet couple of months. The point is the shape of the decisions, so you can copy the moves with your own words.
 

@@ -1,0 +1,41 @@
+# Reminders GTD public guide (Hugo Book). Chapter source: ../guide/
+baseURL: "https://markheydon.me.uk/ios-reminders-gtd/"
+title: "Reminders GTD"
+defaultContentLanguage: en-gb
+locale: en-gb
+enableRobotsTXT: true
+enableGitInfo: true
+contentDir: ../guide
+
+module:
+  hugoVersion:
+    extended: true
+    min: "0.146.0"
+  imports:
+    - path: github.com/alex-shpak/hugo-book
+      disable: false
+  mounts:
+    - source: ../guide/images
+      target: static/images
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  tableOfContents:
+    startLevel: 2
+
+params:
+  BookTheme: "light"
+  BookToC: true
+  BookRepo: "https://github.com/markheydon/ios-reminders-gtd"
+  BookEditPath: "edit/main/guide"
+  BookSection: "*"
+  BookSearch: true
+  BookPortableLinks: true
+
+menu:
+  after:
+    - name: GitHub
+      url: "https://github.com/markheydon/ios-reminders-gtd"
+      weight: 10

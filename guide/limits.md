@@ -1,4 +1,8 @@
-# What Reminders will not do
+---
+title: "What Reminders will not do"
+weight: 41
+permalink: /limits/
+---
 
 The system in this guide is shaped around Reminders on iPhone and iPad. Knowing the app’s real limits saves you from fighting the software. The guide assumes **iOS 27** or **iPadOS 27**.
 

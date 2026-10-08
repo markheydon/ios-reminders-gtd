@@ -1,4 +1,8 @@
-# Do the work
+---
+title: "Do the work"
+weight: 21
+permalink: /do-the-work/
+---
 
 The lists you act from are the smart lists. Projects is where you think about outcomes. Inbox is where you catch things. During the day you mostly live in Today and in one context.
 

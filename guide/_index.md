@@ -1,9 +1,7 @@
 ---
-layout: default
 title: Reminders GTD
+type: docs
 ---
-
-# Reminders GTD
 
 A follow-along way to run [Getting Things Done](https://gettingthingsdone.com/) in the iPhone or iPad Reminders app.
 

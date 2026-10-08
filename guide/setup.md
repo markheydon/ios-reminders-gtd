@@ -1,4 +1,8 @@
-# Set it up on your iPhone or iPad
+---
+title: "Set it up on your iPhone or iPad"
+weight: 12
+permalink: /setup/
+---
 
 Budget about an hour. These steps are written for **Reminders on iOS 27** or **iPadOS 27**. Tags, dates, and the rest of the metadata sit in the box around the reminder you are editing. Apple Intelligence can fill in a date, time, or place from a sentence you type on a supported device (for example iPhone 15 Pro or later, or an iPad with Apple Intelligence). The lists and habits in this guide do not depend on that fill-in.
 

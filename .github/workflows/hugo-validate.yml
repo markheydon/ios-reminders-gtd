@@ -1,0 +1,22 @@
+name: Hugo validate
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "guide/**"
+      - "website/**"
+      - "scripts/invoke-hugo-site.sh"
+      - "scripts/Invoke-HugoSite.ps1"
+      - ".github/workflows/hugo-build.yml"
+      - ".github/workflows/hugo-validate.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  hugo-validate:
+    name: Hugo validate
+    uses: ./.github/workflows/hugo-build.yml
+    with:
+      deploy: false
