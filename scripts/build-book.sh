@@ -75,10 +75,6 @@ def strip_front_matter(text: str) -> str:
             return text[end + 5 :]
     return text
 
-def demote_md_links(text: str) -> str:
-    # Intra-guide .md links become plain text for offline editions (v1).
-    return re.sub(r"\[([^\]]+)\]\([^)]+\.md\)", r"\1", text)
-
 prepared_dir.mkdir(parents=True, exist_ok=True)
 paths = []
 for line in chapters_file.read_text(encoding="utf-8").splitlines():
@@ -88,7 +84,6 @@ for line in chapters_file.read_text(encoding="utf-8").splitlines():
     src = root / line
     rel_name = Path(line).name
     body = strip_front_matter(src.read_text(encoding="utf-8"))
-    body = demote_md_links(body)
     dest = prepared_dir / rel_name
     dest.write_text(body, encoding="utf-8")
     paths.append(dest)
@@ -105,6 +100,8 @@ mkdir -p "$PDF_DOCS/images"
 for chapter in "${CHAPTER_PATHS[@]}"; do
   cp "$chapter" "$PDF_DOCS/$(basename "$chapter")"
 done
+cp book/front-matter.md "$PDF_DOCS/front-matter.md"
+PDF_FRONT_MATTER="$PDF_DOCS/front-matter.md"
 for svg in docs/images/*.svg; do
   base="$(basename "$svg" .svg)"
   rsvg-convert -w 1200 "$svg" -o "$PDF_DOCS/images/${base}.png"
@@ -150,7 +147,7 @@ pandoc "${PANDOC_COMMON[@]}" \
   -o "$EPUB_OUT"
 
 pandoc "${PANDOC_COMMON[@]}" \
-  book/front-matter.md \
+  "$PDF_FRONT_MATTER" \
   "${PDF_CHAPTER_PATHS[@]}" \
   --resource-path="$PDF_DOCS":book \
   --pdf-engine=xelatex \

@@ -9,21 +9,21 @@ permissions:
 
 jobs:
   build:
+    uses: ./.github/workflows/book-build-reusable.yml
+    with:
+      release: true
+      book_version: ${{ github.event.release.tag_name }}
+
+  attach:
+    needs: build
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Install build tools
-        run: |
-          sudo apt-get update
-          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y \
-            pandoc librsvg2-bin texlive-xetex texlive-latex-extra
-
-      - name: Build EPUB and PDF
-        env:
-          BOOK_RELEASE: 1
-          BOOK_VERSION: ${{ github.event.release.tag_name }}
-        run: ./scripts/build-book.sh release
+      - uses: actions/download-artifact@v4
+        with:
+          name: book-dist
+          path: dist
 
       - name: Attach to release
         uses: softprops/action-gh-release@v2
