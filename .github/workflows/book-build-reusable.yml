@@ -29,7 +29,7 @@ jobs:
     container:
       image: pandoc/extra:3.6
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Ensure build helpers
         run: |
@@ -38,6 +38,8 @@ jobs:
             command -v bash >/dev/null 2>&1 || missing="$missing bash"
             command -v python3 >/dev/null 2>&1 || missing="$missing python3"
             command -v rsvg-convert >/dev/null 2>&1 || missing="$missing librsvg"
+            command -v fc-list >/dev/null 2>&1 || missing="$missing fontconfig"
+            missing="$missing ttf-dejavu"
             if [ -n "$missing" ]; then
               apk add --no-cache $missing
             fi
@@ -46,6 +48,8 @@ jobs:
             command -v bash >/dev/null 2>&1 || missing="$missing bash"
             command -v python3 >/dev/null 2>&1 || missing="$missing python3"
             command -v rsvg-convert >/dev/null 2>&1 || missing="$missing librsvg2-bin"
+            command -v fc-list >/dev/null 2>&1 || missing="$missing fontconfig"
+            missing="$missing fonts-dejavu-core"
             if [ -n "$missing" ]; then
               apt-get update
               DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends $missing
@@ -68,7 +72,7 @@ jobs:
 
       - name: Upload build output for release attach
         if: inputs.release
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: book-dist
           path: |
@@ -78,7 +82,7 @@ jobs:
 
       - name: Upload draft book
         if: inputs.upload_draft
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: book-draft
           path: |

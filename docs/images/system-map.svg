@@ -2,9 +2,9 @@
   <title id="title">From capture to context smart lists</title>
   <desc id="desc">Inbox is clarified into Someday, a project with tagged subtasks, or Next. Context tags gather onto Anywhere, Home, Out, Calls, and Waiting.</desc>
   <style>
-    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #1c1917; }
+    text { font-family: "DejaVu Sans", "Liberation Sans", Helvetica, Arial, sans-serif; fill: #1c1917; }
     .small { font-size: 13px; fill: #44403c; }
-    .label { font-size: 15px; font-weight: 650; }
+    .label { font-size: 15px; font-weight: 600; }
     .hint { font-size: 12px; fill: #57534e; }
   </style>
   <rect width="880" height="560" fill="#fafaf9"/>
@@ -30,11 +30,11 @@
 
   <rect x="110" y="230" width="460" height="36" rx="8" fill="#ffffff" stroke="#4338ca"/>
   <text class="small" x="126" y="253">Email the accountant the questions</text>
-  <text class="small" x="470" y="253" font-weight="650">#anywhere</text>
+  <text class="small" x="470" y="253" font-weight="600">#anywhere</text>
 
   <rect x="110" y="276" width="460" height="36" rx="8" fill="#ffffff" stroke="#4338ca"/>
   <text class="small" x="126" y="299">Priya: photos of the damp patch</text>
-  <text class="small" x="490" y="299" font-weight="650">#waiting</text>
+  <text class="small" x="490" y="299" font-weight="600">#waiting</text>
 
   <rect x="110" y="322" width="460" height="32" rx="8" fill="#ffffff" stroke="#c7d2fe"/>
   <text class="hint" x="126" y="343">Notes hold later steps that are not actions yet.</text>
@@ -49,7 +49,7 @@
   <polygon points="700,180 688,174 694,166" fill="#a8a29e"/>
 
   <text class="label" x="40" y="430">Smart lists you open</text>
-  <g font-size="14" font-weight="650">
+  <g font-size="14" font-weight="600">
     <rect x="40" y="448" width="140" height="40" rx="20" fill="#dbeafe" stroke="#1d4ed8"/>
     <text x="110" y="473" text-anchor="middle">Anywhere</text>
     <rect x="196" y="448" width="110" height="40" rx="20" fill="#dcfce7" stroke="#166534"/>

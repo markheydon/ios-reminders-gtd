@@ -2,8 +2,8 @@
   <title id="title">Clarify one inbox item</title>
   <desc id="desc">Decide whether an inbox item is trash or reference, someday, a two-minute action, a project with tagged subtasks, or a single next action.</desc>
   <style>
-    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #1c1917; }
-    .q { font-size: 15px; font-weight: 650; }
+    text { font-family: "DejaVu Sans", "Liberation Sans", Helvetica, Arial, sans-serif; fill: #1c1917; }
+    .q { font-size: 15px; font-weight: 600; }
     .a { font-size: 13px; fill: #44403c; }
   </style>
   <rect width="880" height="640" fill="#fafaf9"/>
