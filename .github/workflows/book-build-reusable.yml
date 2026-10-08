@@ -1,0 +1,91 @@
+name: Book build (reusable)
+
+on:
+  workflow_call:
+    inputs:
+      release:
+        description: Build release filenames (reminders-gtd.*)
+        type: boolean
+        default: false
+      book_version:
+        description: Release tag written into metadata version field
+        type: string
+        required: false
+      upload_draft:
+        description: Upload draft EPUB and PDF as a workflow artifact
+        type: boolean
+        default: false
+      retention_days:
+        description: Artifact retention when upload_draft is true
+        type: number
+        default: 14
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: pandoc/extra:3.6
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Ensure build helpers
+        run: |
+          if command -v apk >/dev/null 2>&1; then
+            missing=""
+            command -v bash >/dev/null 2>&1 || missing="$missing bash"
+            command -v python3 >/dev/null 2>&1 || missing="$missing python3"
+            command -v rsvg-convert >/dev/null 2>&1 || missing="$missing librsvg"
+            command -v fc-list >/dev/null 2>&1 || missing="$missing fontconfig"
+            missing="$missing ttf-dejavu"
+            if [ -n "$missing" ]; then
+              apk add --no-cache $missing
+            fi
+          elif command -v apt-get >/dev/null 2>&1; then
+            missing=""
+            command -v bash >/dev/null 2>&1 || missing="$missing bash"
+            command -v python3 >/dev/null 2>&1 || missing="$missing python3"
+            command -v rsvg-convert >/dev/null 2>&1 || missing="$missing librsvg2-bin"
+            command -v fc-list >/dev/null 2>&1 || missing="$missing fontconfig"
+            missing="$missing fonts-dejavu-core"
+            if [ -n "$missing" ]; then
+              apt-get update
+              DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends $missing
+            fi
+          else
+            echo "error: unsupported container OS (need apk or apt-get)" >&2
+            exit 1
+          fi
+
+      - name: Build EPUB and PDF
+        env:
+          BOOK_RELEASE: ${{ inputs.release && '1' || '0' }}
+          BOOK_VERSION: ${{ inputs.book_version }}
+        run: |
+          if [ "${{ inputs.release }}" = "true" ]; then
+            ./scripts/build-book.sh release
+          else
+            ./scripts/build-book.sh
+          fi
+
+      - name: Upload build output for release attach
+        if: inputs.release
+        uses: actions/upload-artifact@v5
+        with:
+          name: book-dist
+          path: |
+            dist/reminders-gtd.epub
+            dist/reminders-gtd.pdf
+          retention-days: 1
+
+      - name: Upload draft book
+        if: inputs.upload_draft
+        uses: actions/upload-artifact@v5
+        with:
+          name: book-draft
+          path: |
+            dist/reminders-gtd-draft.epub
+            dist/reminders-gtd-draft.pdf
+          retention-days: ${{ inputs.retention_days }}

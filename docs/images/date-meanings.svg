@@ -2,7 +2,7 @@
   <title id="title">What a date means</title>
   <desc id="desc">No date means do it in that context. A date means due or show in Today, and the action still appears in its context list. Steps that cannot start yet stay in the project notes.</desc>
   <style>
-    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #1c1917; }
+    text { font-family: "DejaVu Sans", "Liberation Sans", Helvetica, Arial, sans-serif; fill: #1c1917; }
     .h { font-size: 16px; font-weight: 700; }
     .b { font-size: 14px; fill: #44403c; }
   </style>

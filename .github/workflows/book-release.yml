@@ -1,0 +1,33 @@
+name: Book release
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    uses: ./.github/workflows/book-build-reusable.yml
+    with:
+      release: true
+      book_version: ${{ github.event.release.tag_name }}
+
+  attach:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v5
+        with:
+          name: book-dist
+          path: dist
+
+      - name: Attach to release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            dist/reminders-gtd.epub
+            dist/reminders-gtd.pdf
