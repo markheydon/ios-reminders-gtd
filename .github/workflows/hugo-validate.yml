@@ -2,7 +2,6 @@ name: Hugo validate
 
 on:
   pull_request:
-    branches: [main]
     paths:
       - "guide/**"
       - "website/**"
