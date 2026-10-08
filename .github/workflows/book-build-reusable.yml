@@ -33,12 +33,26 @@ jobs:
 
       - name: Ensure build helpers
         run: |
-          missing=""
-          command -v bash >/dev/null 2>&1 || missing="$missing bash"
-          command -v rsvg-convert >/dev/null 2>&1 || missing="$missing librsvg2-bin"
-          if [ -n "$missing" ]; then
-            apt-get update
-            DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends $missing
+          if command -v apk >/dev/null 2>&1; then
+            missing=""
+            command -v bash >/dev/null 2>&1 || missing="$missing bash"
+            command -v python3 >/dev/null 2>&1 || missing="$missing python3"
+            command -v rsvg-convert >/dev/null 2>&1 || missing="$missing librsvg"
+            if [ -n "$missing" ]; then
+              apk add --no-cache $missing
+            fi
+          elif command -v apt-get >/dev/null 2>&1; then
+            missing=""
+            command -v bash >/dev/null 2>&1 || missing="$missing bash"
+            command -v python3 >/dev/null 2>&1 || missing="$missing python3"
+            command -v rsvg-convert >/dev/null 2>&1 || missing="$missing librsvg2-bin"
+            if [ -n "$missing" ]; then
+              apt-get update
+              DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends $missing
+            fi
+          else
+            echo "error: unsupported container OS (need apk or apt-get)" >&2
+            exit 1
           fi
 
       - name: Build EPUB and PDF
