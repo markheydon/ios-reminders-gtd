@@ -1,0 +1,10 @@
+docs/why.md
+docs/model.md
+docs/setup.md
+docs/capture-and-clarify.md
+docs/do-the-work.md
+docs/projects.md
+docs/weekly-review.md
+docs/examples.md
+docs/advanced.md
+docs/limits.md

@@ -1,0 +1,30 @@
+name: Book draft
+
+on:
+  pull_request:
+    paths:
+      - 'docs/**'
+      - 'book/**'
+      - 'scripts/build-book.sh'
+      - '.github/workflows/book-draft.yml'
+      - '.github/workflows/book-build-reusable.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'docs/**'
+      - 'book/**'
+      - 'scripts/build-book.sh'
+      - '.github/workflows/book-draft.yml'
+      - '.github/workflows/book-build-reusable.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    uses: ./.github/workflows/book-build-reusable.yml
+    with:
+      release: false
+      upload_draft: true
+      retention_days: ${{ github.ref == 'refs/heads/main' && 90 || 14 }}

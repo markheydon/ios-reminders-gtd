@@ -10,6 +10,8 @@ David Allen’s method is the foundation. This repository is an independent guid
 
 The same guide is published at [markheydon.me.uk/ios-reminders-gtd](https://markheydon.me.uk/ios-reminders-gtd/).
 
+**Offline editions:** stable [PDF and EPUB on GitHub Releases](https://github.com/markheydon/ios-reminders-gtd/releases). Draft builds for proofreading run when the guide or book export changes (including on pull requests); download the **book-draft** artifact from the [Book draft](https://github.com/markheydon/ios-reminders-gtd/actions/workflows/book-draft.yml) workflow run.
+
 ## The short version
 
 Capture into **Inbox**. Clarify it into a small set of lists. Do your work from **smart lists**, one per context.

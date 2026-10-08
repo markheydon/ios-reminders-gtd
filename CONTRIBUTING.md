@@ -39,7 +39,17 @@ For setup and Reminders UI behaviour, the maintainer will not merge fixes withou
 ## Merge
 
 - Prefer **squash merge** so each logical change is one commit on `main`.
-- No automated CI; review is checklist-based.
+- GitHub Pages updates from `/docs` on merge. **Guide check** (fast) runs on pull requests and `main`: navigation sync, `book/chapters.txt` order, broken internal links and images, and em-dash guardrails (`python3 scripts/check-guide.py`). **Book** export builds on the same content changes; pull requests and `main` produce a **book-draft** artifact for proofreading, and a [published release](https://github.com/markheydon/ios-reminders-gtd/releases) attaches stable PDF and EPUB. CI uses the `pandoc/extra` container image (Pandoc and XeLaTeX preinstalled). Editorial review stays checklist-based for voice and device behaviour.
+
+### Build the book locally
+
+Install `pandoc`, `rsvg-convert`, and `texlive-xetex` (plus `texlive-latex-extra` on Debian/Ubuntu), or use a matching `pandoc/extra` container, then from the repository root:
+
+```bash
+./scripts/build-book.sh
+```
+
+Outputs land in `dist/` (`reminders-gtd-draft.epub` and `.pdf`). For release filenames, run `./scripts/build-book.sh release`.
 
 ## Licence
 
