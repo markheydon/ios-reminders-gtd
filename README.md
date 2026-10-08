@@ -16,7 +16,9 @@ The same guide is published at [markheydon.me.uk/ios-reminders-gtd](https://mark
 
 Capture into **Inbox**. Clarify it into a small set of lists. Do your work from **smart lists**, one per context.
 
-A project is a reminder. The things you can do on it right now are **subtasks**, and each subtask has **one context tag**. A smart list for that tag gathers those actions from every active project.
+A **project** is an **outcome** you are committed to. In Reminders it is a reminder on **Projects**. The next actions you can take now are **subtasks**, each with one context tag. A smart list for that tag gathers those actions from every active project.
+
+One-off actions you can do now live on **Next Actions**, each with one context tag or `waiting` while blocked. One-off waits that are not tied to a project outcome live on **Waiting For**, tagged `waiting` the same way. Smart lists still gather by tag.
 
 ![Projects hold tagged subtasks, and smart lists gather them by context](guide/images/system-map.svg)
 
@@ -24,18 +26,22 @@ Four contexts are enough:
 
 | Smart list | Tag | Open it when |
 | --- | --- | --- |
-| Anywhere | `anywhere` | You can do the action with what you already have on you |
-| Home | `home` | You need to be in the house |
-| Out | `out` | You need to be somewhere else |
-| Calls | `call` | You need a live conversation |
+| **Anywhere** | `anywhere` | You can do the action with what you already have on you |
+| **Home** | `home` | You need to be in the house |
+| **Out** | `out` | You need to be somewhere else |
+| **Calls** | `call` | You need a live conversation |
+
+\* These four are the default in this guide. Swap names only if you will still clarify to one tag per action.
 
 `anywhere` replaces the old `@computer` context. A phone is always with you, and most “computer” work can be done in a queue, on a sofa, or at a desk. The constraint that still matters is place, or the fact that another person has to be on the line.
 
-While you are blocked on someone else, change that action’s tag to `waiting`. It leaves the context list and shows up on a Waiting smart list, still tucked under its project.
+While you are blocked on someone else, change that action’s tag to `waiting`. It leaves the context list and shows up on the **Waiting** smart list, still tucked under its project when the wait is a subtask.
 
 ## Read it in this order
 
-1. [Why this is worth doing](guide/why.md) - including how to start again after a break
+The web home page splits **Quick Start** and **Read the Full Guide**; this numbered list matches the book export order.
+
+1. [Why this is worth doing](guide/why.md) - what usually breaks, and how this system stays small
 2. [The model](guide/model.md) - what each Reminders feature is for
 3. [Set it up on your iPhone or iPad](guide/setup.md) - the tap-by-tap afternoon
 4. [Capture and clarify](guide/capture-and-clarify.md)
@@ -51,8 +57,8 @@ If you only do three things: create the lists in the setup guide, put current ac
 ## What you need
 
 - An iPhone on iOS 27 or an iPad on iPadOS 27, signed into iCloud with Reminders turned on. Apple Intelligence extras, such as describing a reminder in a sentence, need a supported device (for example iPhone 15 Pro or later, or an iPad with Apple Intelligence). The lists themselves do not.
-- About an hour the first time, then a short weekly review
-- No extra apps
+- About an hour the first time, then a short weekly review.
+- No extra apps.
 
 ## Licence
 

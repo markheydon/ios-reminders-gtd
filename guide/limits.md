@@ -12,9 +12,9 @@ OmniFocus-style “defer until Thursday, due Friday” needs two dates. Reminder
 
 What this guide does instead:
 
-- Actions you could do now are subtasks (or Next items) with a context tag, so the smart lists show them.
+- Actions you could do now are subtasks (or items on **Next Actions**) with a context tag, so the smart lists show them.
 - Actions you must not start are lines in the project notes.
-- A date means “due” or “please also put this in Today on that day”. The context list still shows it early.
+- A date means “due” or “please also put this in **Today** on that day”. The context list still shows it early.
 
 If you need both a hidden start and a deadline, write the start in the notes and let the date be the deadline, or use a dated “promote this step” reminder as described in [do the work](do-the-work.md).
 
@@ -26,7 +26,7 @@ Ticking the parent ticks everything under it. The parent is the outcome, and you
 
 Custom smart lists show subtasks under the project title, not only a “has subtasks” link. Tick the action that carries the tag for the list you opened. If a sibling action from another context is visible because Apple groups the whole project, leave it for its own list.
 
-A tag filter includes reminders that have the tag. It cannot also say “and not this other tag” in a second tag filter. That is why a waiting action **replaces** its context tag with `waiting`, and why Someday is a separate list that the smart lists do not read. One tag on a live action is also simpler to keep up.
+A tag filter includes reminders that have the tag. It cannot also say “and not this other tag” in a second tag filter. That is why a waiting action **replaces** its context tag with `waiting`, and why **Someday** is a separate list that the context smart lists do not read. One tag on a live action is also simpler to keep up.
 
 ## The web app is the wrong place to run this
 
@@ -46,12 +46,12 @@ Reminders is a poor filing cabinet. Notes, Files, and the apps that already hold
 
 ## A sentence can smuggle in a date
 
-Apple Intelligence can turn “tomorrow at 4” in the title into a real due date as you type, on a supported device (for example iPhone 15 Pro or later, or an iPad with Apple Intelligence). Glance at the metadata box before you tap Done. A date you did not choose is still a date, and it will show up in Today.
+Apple Intelligence can turn “tomorrow at 4” in the title into a real due date as you type, on a supported device (for example iPhone 15 Pro or later, or an iPad with Apple Intelligence). Glance at the **quick controls** or the sectioned table before you tap Done. A date you did not choose is still a date, and it will show up in **Today**.
 
 ## Auto-Categorize will rename your areas
 
-Projects uses sections as areas of responsibility. Auto-Categorize builds its own sections. Leave it off on the GTD lists. The grocery list is where Apple’s automatic sorting belongs.
+**Projects** uses sections as areas of responsibility. Auto-Categorize builds its own sections. Leave it off on the GTD lists. If you use Apple’s **Groceries** list for shopping, that is where automatic sorting belongs.
 
 ## Tags will not rescue a skipped review
 
-A new tag feels like progress and leaves the underlying lists just as stale. If the system feels heavy, remove an optional tag before you add one, and do a short review: Inbox, projects missing a subtask, Waiting.
+A new tag feels like progress and leaves the underlying lists just as stale. If the system feels heavy, remove an optional tag before you add one, and do a short review: **Inbox**, projects missing a subtask, **Waiting**.
