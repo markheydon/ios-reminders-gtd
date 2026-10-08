@@ -6,6 +6,36 @@
     .small { font-size: 13px; fill: #44403c; }
     .label { font-size: 15px; font-weight: 600; }
     .hint { font-size: 12px; fill: #57534e; }
+
+    @media (prefers-color-scheme: dark) {
+      text { fill: #eceff4; }
+      .small { fill: #d8dee9; }
+      .hint { fill: #a8b0bd; }
+      rect:first-of-type { fill: #2e3440; }
+      rect[fill="#fee2e2"] { fill: #5c3a3a; }
+      rect[fill="#e0e7ff"] { fill: #3d455c; }
+      rect[fill="#f5f5f4"] { fill: #434c5e; }
+      rect[fill="#eef2ff"] { fill: #3b4258; }
+      rect[fill="#ffffff"] { fill: #3b4252; }
+      rect[fill="#ccfbf1"] { fill: #2f4a44; }
+      rect[fill="#dbeafe"] { fill: #354558; }
+      rect[fill="#dcfce7"] { fill: #354a3d; }
+      rect[fill="#ffedd5"] { fill: #4a4035; }
+      rect[fill="#f3e8ff"] { fill: #423d4f; }
+      rect[stroke="#b91c1c"] { stroke: #bf616a; }
+      rect[stroke="#3730a3"] { stroke: #81a1c1; }
+      rect[stroke="#a8a29e"] { stroke: #7c8594; }
+      rect[stroke="#4338ca"] { stroke: #5e81ac; }
+      rect[stroke="#c7d2fe"] { stroke: #6b7aa8; }
+      rect[stroke="#0f766e"] { stroke: #8fbcbb; }
+      rect[stroke="#1d4ed8"] { stroke: #81a1c1; }
+      rect[stroke="#166534"] { stroke: #a3be8c; }
+      rect[stroke="#c2410c"] { stroke: #d08770; }
+      rect[stroke="#6d28d9"] { stroke: #b48ead; }
+      rect[stroke="#57534e"] { stroke: #9aa3b2; }
+      line[stroke="#a8a29e"] { stroke: #7c8594; }
+      polygon[fill="#a8a29e"] { fill: #7c8594; }
+    }
   </style>
   <rect width="880" height="560" fill="#fafaf9"/>
 
