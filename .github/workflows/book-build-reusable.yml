@@ -29,7 +29,7 @@ jobs:
     container:
       image: pandoc/extra:3.6
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v7
 
       - name: Ensure build helpers
         run: |
