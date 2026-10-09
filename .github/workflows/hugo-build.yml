@@ -71,8 +71,10 @@ jobs:
         uses: actions/cache/restore@v6
         with:
           path: ${{ runner.temp }}/.cache/hugo
-          key: hugo-${{ github.run_id }}
-          restore-keys: hugo-
+          key: hugo-${{ env.HUGO_VERSION }}-${{ hashFiles('website/go.sum', 'website/hugo.yaml', 'website/go.mod') }}
+          restore-keys: |
+            hugo-${{ env.HUGO_VERSION }}-
+            hugo-
 
       - name: Build
         working-directory: website

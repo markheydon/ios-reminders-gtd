@@ -36,7 +36,7 @@ If Reminders asks which account to use, choose **iCloud**. Other accounts can ap
 
 Drag them into the **GTD** group if they landed outside it: **Edit Lists**, hold the list handle, move it under **GTD**, tap Done.
 
-Order inside the group for now, top to bottom: **Inbox**, **Projects**, **Next Actions**, **Waiting For**, **Someday**, **Weekly Review**. You will add the five context smart lists underneath in step 5.
+Order inside the group for now, top to bottom: **Inbox**, **Projects**, **Next Actions**, **Waiting For**, **Someday**, **Weekly Review**. Step 5 adds the five context smart lists and gives the final order (smart lists sit between **Waiting For** and **Someday**).
 
 ## 3. Add areas to Projects
 
@@ -137,7 +137,7 @@ All, Completed, and Assigned to Me can stay off until you want them. Leave **Gro
    - Check Waiting
    - Open each active project and confirm it has a next action
    - Scan **Next Actions** for anything that is really a project
-   - Review Someday
+   - Review **Someday**
    - Look at the horizons note
    - Clear stale flags
 

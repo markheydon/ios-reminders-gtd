@@ -46,9 +46,9 @@ Working notes while the guide is read on a real iPhone or iPad. This file is **n
 
 ## Your notes (during proofread)
 
-**Next session: review the findings.** Every guide page has been read. `docs/setup.md` was followed on an iPad. The published guide has not been edited from this pass. Findings 4–53 are below, in number order. Finding 25 is rejected. Start with the open rows and decide what to change, what to leave, and which GitHub issues to open.
+**Findings review (Oct 2026):** Every guide page was read; `guide/setup.md` was followed on an iPad. Content findings **5–53** (except deferred **18**, rejected **25**) are implemented under `guide/` on branch `cursor/editorial-findings-pass-4e7f`. Findings **4**, **10**, and **54** are in the Hugo site. Rows below record what was decided; use them when opening GitHub issues for anything still `open`.
 
-Decided in the sanity pass (8 Oct 2026). The rows below match this. The guide text does not yet.
+Decided in the sanity pass (8 Oct 2026). The rows below match the implemented guide unless a row is still `open`.
 
 - A smart list can include only one list in the Lists filter (finding 40). **Anywhere**, **Home**, **Out**, and **Calls** smart lists filter on their tag only (tag gathers across lists). **Waiting** smart list is the exception: **tag** `` `waiting` `` **or** list **Waiting For** (finding 46).
 - Setup should not offer All Selected versus Any Selected (finding 41). With one tag selected, the two modes match.
@@ -57,7 +57,7 @@ Decided in the sanity pass (8 Oct 2026). The rows below match this. The guide te
 - A capture may be rough, including “Sam” or a bit of nonsense. It has to be enough to remember the thought at clarify (finding 27).
 - A project keeps at least one next physical action you can do now, or a waiting item if something is blocking. More than one subtask is fine when each can be done now (finding 30).
 - The README repeats guide prose only where the repo page needs it. The book should keep useful home-page material. The “if you only do three things” line is already in `book/front-matter.md` (findings 33 and 48).
-- “Starting again after a break” does not belong on `docs/why.md`, and that page should not point at it (finding 47).
+- “Starting again after a break” does not belong on `guide/why.md`, and that page should not point at it (finding 47).
 
 Still open before or during that review:
 
@@ -65,9 +65,9 @@ Still open before or during that review:
 
 ### Illustrations (planned)
 
-**Scope:** Screenshots for **the whole guide** (`docs/*.md`), not only `examples.md`. After this editorial pass is implemented and copy is stable, the author captures **generic iPhone screenshots**; a later agent pass places them beside the relevant sections. **Do not shoot until** list names, setup steps, and tap-path wording match the edited text (findings 16, 39, 46, etc.).
+**Scope:** Screenshots for **the whole guide** (`guide/*.md`), not only `examples.md`. After copy is stable on `main`, the author captures **generic iPhone screenshots**; a later agent pass places them beside the relevant sections. **Do not shoot until** list names, setup steps, and tap-path wording match the edited text (findings 16, 39, 46, etc.).
 
-**Guide-wide shot checklist** (draft — trim or add when each page is edited; one UI idea per row is enough):
+**Guide-wide shot checklist** (draft - trim or add when each page is edited; one UI idea per row is enough):
 
 | Page | Sections / intent | Screenshot ideas |
 | --- | --- | --- |
@@ -102,7 +102,7 @@ Use these titles when building the example world (list names per findings 16 / 1
 
 **Consistency check (8 Oct 2026):** Tuesday–Friday actions follow the Monday clarify table and the Monday-evening summary (line 29). Tax arc: email → gather statements → call accountant. Tap arc: Priya wait → book plumber; Friday adds washer `#out`. Parking fine cleared Thursday Home. Friday **Inbox** lines are **new** mid-week captures, not Monday leftovers. No story break found; re-check after finding 16 renames and finding 27 capture-example edits.
 
-Read in whatever order you find the pages, and say what you noticed in chat. Notes get written here. The published guide stays as it is until a later pass decides what to change.
+Read in whatever order you find the pages, and say what you noticed in chat. Notes get written here. Confirmed fixes land in `guide/` on the editorial branch, then merge to `main`.
 
 A page stays unticked while you are still in it. A tick means that page is finished. It is not a verdict. Findings stay `open` until the end review.
 
@@ -110,21 +110,21 @@ A page stays unticked while you are still in it. A tick means that page is finis
 
 Phone in hand. One sitting per page is enough, especially setup.
 
-- [x] `docs/setup.md` - content read (findings 23–25) and followed on iPad, 8 Oct 2026 (findings 34–48). Finding 25 withdrawn.
-- [x] `docs/do-the-work.md` - content read (findings 28–29). When Messaging on **i** confirmed 8 Oct 2026 (Places & People; contact picker). Messages surfacing out of scope for the guide.
-- [x] `docs/projects.md` - content read (finding 30). Packing-list model decided (item 3); guide text not updated yet.
-- [x] `docs/weekly-review.md` - content fine. No findings.
-- [x] `docs/advanced.md` - finished. Findings 50–53. **i** sheet and quick-controls-in-edit flow confirmed 8 Oct 2026 (finding 39).
-- [x] `docs/limits.md` - content fine. No findings.
+- [x] `guide/setup.md` - content read (findings 23–25) and followed on iPad, 8 Oct 2026 (findings 34–48). Finding 25 withdrawn.
+- [x] `guide/do-the-work.md` - content read (findings 28–29). When Messaging on **i** confirmed 8 Oct 2026 (Places & People; contact picker). Messages surfacing out of scope for the guide.
+- [x] `guide/projects.md` - content read (finding 30). Packing-list model decided (item 3); fixed in `guide/projects.md`.
+- [x] `guide/weekly-review.md` - content fine. No findings.
+- [x] `guide/advanced.md` - finished. Findings 50–53. **i** sheet and quick-controls-in-edit flow confirmed 8 Oct 2026 (finding 39).
+- [x] `guide/limits.md` - content fine. No findings.
 
 Quieter pass. Voice, links, and names staying consistent. No tap-by-tap unless a sentence sends you to a control.
 
-- [x] `docs/index.md` - finished. Findings 4–9.
-- [x] `docs/why.md` - finished. Findings 10–15.
-- [x] `docs/model.md` - finished. Findings 16–22. Title duplicate is finding 10, not logged again.
-- [x] `docs/capture-and-clarify.md` - finished. Findings 26–27.
-- [x] `docs/examples.md` - finished. Finding 31.
-- [x] `README.md` - finished. Findings 32–33. The numbered guide list matches `docs/index.md`.
+- [x] `guide/_index.md` - finished. Findings 4–9.
+- [x] `guide/why.md` - finished. Findings 10–15.
+- [x] `guide/model.md` - finished. Findings 16–22. Title duplicate is finding 10, not logged again.
+- [x] `guide/capture-and-clarify.md` - finished. Findings 26–27.
+- [x] `guide/examples.md` - finished. Finding 31.
+- [x] `README.md` - finished. Findings 32–33. The numbered guide list matches `book/chapters.txt`.
 
 ### Findings
 

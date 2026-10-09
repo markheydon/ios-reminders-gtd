@@ -13,7 +13,7 @@ body:
     attributes:
       label: Page or section
       description: Link to the published page, or a file under guide/ (e.g. guide/setup.md)
-      placeholder: guide/setup.md — smart list for Home
+      placeholder: guide/setup.md - smart list for Home
     validations:
       required: true
   - type: textarea
