@@ -10,7 +10,7 @@
 | Change PDF/EPUB cover or export metadata | [`book/`](../book/) |
 | Change site theme, footer, or Hugo config | [`website/`](../website/) |
 
-**README.md** on GitHub should stay aligned with **guide/_index.md** for the numbered reading list. CI checks that with `python3 scripts/check-guide.py`.
+**README.md** numbered list matches **book/chapters.txt** (book export order). **guide/_index.md** uses Quick Start plus Read the Full Guide and must link each chapter once. CI checks both with `python3 scripts/check-guide.py`.
 
 ## Preview and checks
 

@@ -62,7 +62,7 @@
 
   <rect x="480" y="420" width="360" height="160" rx="12" fill="#ccfbf1" stroke="#0f766e"/>
   <text class="q" x="660" y="452" text-anchor="middle">One step</text>
-  <text class="a" x="500" y="484">Move it to Next.</text>
+  <text class="a" x="500" y="484">Move it to Next Actions.</text>
   <text class="a" x="500" y="508">One tag: anywhere, home,</text>
   <text class="a" x="500" y="532">out, or call.</text>
   <text class="a" x="500" y="556">Use waiting if you are blocked.</text>

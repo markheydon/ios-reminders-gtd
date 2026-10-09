@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="880" height="420" viewBox="0 0 880 420" role="img" aria-labelledby="title desc">
   <title id="title">Where an action lives</title>
-  <desc id="desc">A project reminder holds the outcome and later steps in notes. Current actions are tagged subtasks. One-step work lives in Next. Context smart lists read both.</desc>
+  <desc id="desc">A project reminder holds the outcome and later steps in notes. Current actions are tagged subtasks. One-step work lives in Next Actions. Context smart lists gather by tag.</desc>
   <style>
     text { font-family: "DejaVu Sans", "Liberation Sans", Helvetica, Arial, sans-serif; fill: #1c1917; }
     .h { font-size: 16px; font-weight: 700; }
@@ -48,7 +48,7 @@
   <text class="b" x="400" y="327" font-weight="700">#call</text>
 
   <rect x="556" y="76" width="292" height="120" rx="14" fill="#ccfbf1" stroke="#0f766e"/>
-  <text class="h" x="576" y="108">Next</text>
+  <text class="h" x="576" y="108">Next Actions</text>
   <text class="m" x="576" y="136">Call dentist and book a checkup</text>
   <text class="b" x="576" y="166" font-weight="700">#call</text>
 

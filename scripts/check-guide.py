@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Structural and house-style checks for reader-facing guide files."""
+"""Structural and house-style checks for reader-facing guide files.
+
+README numbered list matches book/chapters.txt (export order).
+guide/_index.md Quick Start + Read the Full Guide must link each chapter once.
+"""
 
 from __future__ import annotations
 
@@ -57,36 +61,48 @@ def chapter_basenames() -> set[str]:
     return names
 
 
-def check_nav_sync() -> None:
-    index_text = INDEX.read_text(encoding="utf-8")
-    readme_text = README.read_text(encoding="utf-8")
-    index_order = [normalise_doc_path(p) for p in nav_targets(index_text, INDEX_NAV_RE)]
-    readme_order = nav_targets(readme_text, README_NAV_RE)
-    if not index_order:
-        fail(f"no numbered navigation links found in {INDEX.relative_to(ROOT)}")
-    if index_order != readme_order:
-        fail(
-            "README.md numbered list does not match guide/_index.md:\n"
-            f"  index:  {index_order}\n"
-            f"  readme: {readme_order}"
-        )
-
-
-def check_chapters_sync() -> None:
+def chapters_file_order() -> list[str]:
     if not CHAPTERS.is_file():
         fail(f"missing {CHAPTERS.relative_to(ROOT)}")
-    index_text = INDEX.read_text(encoding="utf-8")
-    expected = [normalise_doc_path(p) for p in nav_targets(index_text, INDEX_NAV_RE)]
-    lines = []
+    lines: list[str] = []
     for line in CHAPTERS.read_text(encoding="utf-8").splitlines():
         line = line.split("#", 1)[0].strip()
         if line:
             lines.append(line.replace("\\", "/"))
-    if lines != expected:
+    return lines
+
+
+def check_readme_chapters_sync() -> None:
+    readme_text = README.read_text(encoding="utf-8")
+    readme_order = nav_targets(readme_text, README_NAV_RE)
+    expected = chapters_file_order()
+    if not readme_order:
+        fail("no numbered navigation links found in README.md")
+    if readme_order != expected:
         fail(
-            "book/chapters.txt does not match guide/_index.md reading order:\n"
-            f"  index:    {expected}\n"
-            f"  chapters: {lines}"
+            "README.md numbered list does not match book/chapters.txt:\n"
+            f"  readme:   {readme_order}\n"
+            f"  chapters: {expected}"
+        )
+
+
+def check_index_covers_chapters() -> None:
+    index_text = INDEX.read_text(encoding="utf-8")
+    index_hrefs = [normalise_doc_path(p) for p in nav_targets(index_text, INDEX_NAV_RE)]
+    if not index_hrefs:
+        fail(f"no numbered navigation links found in {INDEX.relative_to(ROOT)}")
+    expected = chapters_file_order()
+    expected_names = {Path(p).name for p in expected}
+    index_names = [Path(p).name for p in index_hrefs]
+    if len(index_names) != len(set(index_names)):
+        fail(
+            f"duplicate chapter link in {INDEX.relative_to(ROOT)} navigation: {index_hrefs}"
+        )
+    if set(index_names) != expected_names:
+        fail(
+            "guide/_index.md Quick Start + Read the Full Guide must list each chapter once:\n"
+            f"  index:    {sorted(index_names)}\n"
+            f"  expected: {sorted(expected_names)}"
         )
 
 
@@ -195,8 +211,8 @@ def check_images() -> None:
 
 
 def main() -> None:
-    check_nav_sync()
-    check_chapters_sync()
+    check_readme_chapters_sync()
+    check_index_covers_chapters()
     check_no_em_dash()
     check_md_links()
     check_images()
