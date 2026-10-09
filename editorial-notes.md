@@ -32,11 +32,11 @@ Working notes while the guide is read on a real iPhone or iPad. This file is **n
 | **Likely fix** | Short setup step (or bullet in section 7): create the note once, even if empty. |
 | **Proofread** | Step added at start of setup §7. |
 
-### 3. Packing-list subtasks (conditional - confirm on device)
+### 3. Packing-list subtasks
 
 | Field | Detail |
 | --- | --- |
-| **Status** | confirmed |
+| **Status** | fixed |
 | **Where** | `docs/projects.md` - “How many current subtasks” (packing example) |
 | **Problem** | The packing example reads as a **tagged** parent (“Pack for Thursday”) with **untagged** children, as if that were a special exception to “one context tag per action”. That misplaces **Pack for Thursday** (it belongs on **Projects** as a subtask of the relevant outcome, not as a freestanding tagged parent). Smart lists and project grouping may still show siblings (`docs/limits.md` already warns about extra visible subtasks). |
 | **Likely fix** | Reframe the example: untagged project parent; **Pack for Thursday** as a current subtask with `#home` (or `#anywhere`). Socks, charger, and passport can be subtasks of that packing step if the reader wants a one-sitting checklist. Subtasks should get a context tag at clarify; leaving checklist lines untagged is the reader’s choice at clarify, not a guide-wide exception to the one-tag rule. Optional: one short sentence on smart-list grouping if untagged grandchildren still surprise someone (not re-tested on device in this chat). |
@@ -203,7 +203,7 @@ Reminders on iPhone and iPad match for this guide. Three ideas, not one vague �
 ## After the full read
 
 - [x] All items above have a final status (`confirmed` / `rejected` / `fixed` / deferred). Only finding **18** (horizons) stays `open` for a future issue; no guide edits this pass.
-- [x] Conditional item 3 resolved (model confirmed; guide rewrite still to do).
+- [x] Conditional item 3 resolved and rewritten in `guide/projects.md`.
 - [x] Agreed list of GitHub issues (title + one-line scope). Horizons (finding 18) filed on GitHub; Tickler/Routines/Columns remain `later` in the table below.
 - [x] This file updated after the content pass (findings 5–53 marked `fixed` in the table where implemented).
 
